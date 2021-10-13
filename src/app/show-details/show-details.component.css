@@ -1,0 +1,11 @@
+.details span{
+  color: #ffc107;
+  font-size: 1.5rem !important;
+}
+
+.back{
+  cursor: pointer;
+}
+.back h6 i {
+  font-size: 1.7rem;
+}

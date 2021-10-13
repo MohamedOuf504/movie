@@ -1,0 +1,8 @@
+.movie{
+  background-color: black;
+  color: white;
+
+}
+.movie img{
+  cursor: pointer;
+}

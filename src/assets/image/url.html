@@ -1,0 +1,1239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How to Create a Custom WordPress 404 Error Page | Elegant Themes Blog</title>
+<meta name="robots" content="noodp">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://www.elegantthemes.com/style.css?ver=5.63" />
+<link rel="preconnect" href="https://bid.g.doubleclick.net">
+<link rel="preconnect" href="https://www.googleadservices.com">
+<link rel="preconnect" href="https://googleads.g.doubleclick.net">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google.com">
+<link rel="preconnect" href="https://connect.facebook.net">
+<link rel="icon" type="image/png" href="https://www.elegantthemes.com/images/favicon/favicon-et-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.elegantthemes.com/images/favicon/favicon-et-96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://www.elegantthemes.com/images/favicon/favicon-et-128.png" sizes="128x128">
+<link rel="icon" type="image/png" href="https://www.elegantthemes.com/images/favicon/favicon-et-192.png" sizes="192x192">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900&display=swap" rel="stylesheet">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+<script>
+var OneSignal = window.OneSignal || [];
+OneSignal.push(["init", {
+  appId: "71d64a37-4751-4716-a267-6f7ef2b9b517",
+  autoRegister: true,
+  welcomeNotification: {
+        disable: true
+    },
+  notifyButton: {
+    enable: false
+  }
+}]);
+</script> <link rel="publisher" href="https://plus.google.com/+elegantthemes/" />
+<meta property="og:type" content="article" />
+<meta property="article:publisher" content="http://www.facebook.com/elegantthemes" />
+<meta property="og:site_name" content="Elegant Themes" />
+<meta property="og:title" content="How to Create a Custom WordPress 404 Error Page" />
+<meta property="og:description" content="Chances are high that you’ve landed on a 404 page and immediately left the website because it was less than helpful. A 404 page is what WordPress displays when someone enters or clicks on a URL that doesn’t exist on your website. This page is a generic error that just informs the visitor the page..." />
+<meta property="og:url" content="https://www.elegantthemes.com/blog/wordpress/custom-wordpress-404-error-page" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@elegantthemes" />
+<meta name="twitter:creator" content="@elegantthemes" />
+<meta name="twitter:domain" content="ElegantThemes.com" />
+<meta name="twitter:title" content="How to Create a Custom WordPress 404 Error Page" />
+<meta name="twitter:description" content="Chances are high that you’ve landed on a 404 page and immediately left the website because it was less than helpful. A 404 page is what WordPress displays when someone enters or clicks on a URL..." />
+<meta name="twitter:image:src" content="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/shutterstock_1075475231.jpg" />
+<meta property="og:image" content="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/shutterstock_1075475231.jpg" />
+<meta itemprop="image" content="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/shutterstock_1075475231.jpg">
+<script>var et_site_url='https://www.elegantthemes.com/blog';var et_post_id='155361';function et_core_page_resource_fallback(a,b){"undefined"===typeof b&&(b=a.sheet.cssRules&&0===a.sheet.cssRules.length);b&&(a.onerror=null,a.onload=null,a.href?a.href=et_site_url+"/?et_core_page_resource="+a.id+et_post_id:a.src&&(a.src=et_site_url+"/?et_core_page_resource="+a.id+et_post_id))}
+</script><meta name='robots' content='max-image-preview:large' />
+
+<meta name="description" content="In this article, we’ll explore how to create a custom 404 page for WordPress. Along the way, we&#039;ll see both good and bad designs." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://www.elegantthemes.com/blog/wordpress/custom-wordpress-404-error-page" />
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="Randy A. Brown">
+<meta name="twitter:label2" content="Est. reading time">
+<meta name="twitter:data2" content="8 minutes">
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.elegantthemes.com/blog/#website","url":"https://www.elegantthemes.com/blog/","name":"Elegant Themes Blog","description":"WordPress News, Tutorials And Free Resources","potentialAction":[{"@type":"SearchAction","target":"https://www.elegantthemes.com/blog/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.elegantthemes.com/blog/wordpress/custom-wordpress-404-error-page#primaryimage","inLanguage":"en-US","url":"https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/shutterstock_1075475231.jpg","width":1080,"height":608},{"@type":"WebPage","@id":"https://www.elegantthemes.com/blog/wordpress/custom-wordpress-404-error-page#webpage","url":"https://www.elegantthemes.com/blog/wordpress/custom-wordpress-404-error-page","name":"How to Create a Custom WordPress 404 Error Page - Elegant Themes Blog","isPartOf":{"@id":"https://www.elegantthemes.com/blog/#website"},"primaryImageOfPage":{"@id":"https://www.elegantthemes.com/blog/wordpress/custom-wordpress-404-error-page#primaryimage"},"datePublished":"2021-06-30T12:00:55+00:00","dateModified":"2021-06-29T14:22:28+00:00","author":{"@id":"https://www.elegantthemes.com/blog/#/schema/person/b7e6f9f4b8f18db53e34372d818cc385"},"description":"In this article, we\u2019ll explore how to create a custom 404 page for WordPress. Along the way, we'll see both good and bad designs.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.elegantthemes.com/blog/wordpress/custom-wordpress-404-error-page"]}]},{"@type":"Person","@id":"https://www.elegantthemes.com/blog/#/schema/person/b7e6f9f4b8f18db53e34372d818cc385","name":"Randy A. Brown","image":{"@type":"ImageObject","@id":"https://www.elegantthemes.com/blog/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/84af6bbff4d5acb207bb033a921a0504?s=96&r=g","caption":"Randy A. Brown"},"description":"Randy A. Brown is a freelance writer from east TN specializing in WordPress and eCommerce. He's a longtime WordPress enthusiast and loves learning new things and sharing information with others. If he's not writing or reading, he's probably playing guitar."}]}</script>
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Elegant Themes Blog &raquo; How to Create a Custom WordPress 404 Error Page Comments Feed" href="https://www.elegantthemes.com/blog/wordpress/custom-wordpress-404-error-page/feed" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.elegantthemes.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=b93ed666aef280bbb30ff541b09b2e5c"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.elegantthemes.com/blog/wp-includes/css/dist/block-library/style.min.css?ver=b93ed666aef280bbb30ff541b09b2e5c' type='text/css' media='all' />
+<link rel='stylesheet' id='et_monarch-css-css' href='https://www.elegantthemes.com/blog/wp-content/plugins/monarch/css/style.css?ver=1.4.14' type='text/css' media='all' />
+<link rel='stylesheet' id='et-gf-open-sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700&#038;ver=1.3.12' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.elegantthemes.com/blog/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.elegantthemes.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://www.elegantthemes.com/blog/wp-json/" /><link rel="alternate" type="application/json" href="https://www.elegantthemes.com/blog/wp-json/wp/v2/posts/155361" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.elegantthemes.com/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.elegantthemes.com/blog/wp-includes/wlwmanifest.xml" />
+<link rel='shortlink' href='https://www.elegantthemes.com/blog/?p=155361' />
+<link rel="alternate" type="application/json+oembed" href="https://www.elegantthemes.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.elegantthemes.com%2Fblog%2Fwordpress%2Fcustom-wordpress-404-error-page" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.elegantthemes.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.elegantthemes.com%2Fblog%2Fwordpress%2Fcustom-wordpress-404-error-page&#038;format=xml" />
+<link rel="preload" href="https://www.elegantthemes.com/blog/wp-content/plugins/bloom/core/admin/fonts/modules.ttf" as="font" crossorigin="anonymous"><style type="text/css" id="et-social-custom-css">
+				 
+			</style> </head>
+<body class="post-template-default single single-post postid-155361 single-format-standard blog et_bloom et_monarch">
+<div id="main-nav" class=" solid-header">
+<div class="menu-bg-wrapper">
+<div class="menu-bg"></div>
+<div class="menu-arrow"></div>
+</div>
+<div class="row-container">
+<a id="logo" href="https://www.elegantthemes.com/"><img src="https://www.elegantthemes.com/images/logo.svg" alt="Elegant Themes"></a>
+<nav>
+<ul class="menu">
+<li class="menu-wrapper">
+<a class="menu-item accent-pink" href="https://www.elegantthemes.com/gallery/divi/">Divi
+<svg viewBox="0 0 28 28" class="menu-expand icon-small">
+<title>Expand Menu</title>
+<path d="M18,13h-3v-3c0-0.55-0.45-1-1-1s-1,0.45-1,1v3h-3c-0.55,0-1,0.45-1,1s0.45,1,1,1h3v3c0,0.55,0.45,1,1,1 s1-0.45,1-1v-3h3c0.55,0,1-0.45,1-1S18.55,13,18,13z" />
+</svg>
+<svg viewBox="0 0 28 28" class="menu-collapse icon-small">
+<title>Collapse Menu</title>
+<path d="M14.51,7.22c-0.23-0.3-0.8-0.3-1.03,0l-2.4,2.95c-0.23,0.3,0,0.83,0.46,0.83H13v9c0,0.55,0.45,1,1,1s1-0.45,1-1 v-9h1.45c0.46,0,0.68-0.43,0.46-0.83L14.51,7.22z" />
+</svg>
+</a>
+<div id="divi-sub-menu" class="card card-medium sub-menu sub-menu-wide">
+<ul class="menu-items primary-menu-items accent-purple">
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/gallery/divi/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>About Divi</title>
+<path d="M14,2c6.62,0,12,5.38,12,12s-5.38,12-12,12S2,20.62,2,14S7.38,2,14,2 M14,0C6.27,0,0,6.27,0,14 c0,7.73,6.27,14,14,14s14-6.27,14-14C28,6.27,21.73,0,14,0L14,0z" />
+<path d="M17.92,17.49c0.37-0.44,0.65-0.96,0.84-1.55c0.19-0.6,0.44-2.64-0.01-3.98c-0.2-0.59-0.48-1.11-0.85-1.54 c-0.37-0.43-0.82-0.76-1.36-1C16,9.18,15.36,9,14.65,9H11v10h3.65c0.72,0,1.36-0.24,1.91-0.49C17.1,18.27,17.56,17.92,17.92,17.49z M17.22,7.54c0.81,0.34,1.51,0.83,2.08,1.45c0.56,0.62,0.99,1.36,1.28,2.2C20.86,12.03,21,13.01,21,14c0,0.97-0.13,1.83-0.41,2.67 c-0.28,0.84-0.7,1.59-1.26,2.21c-0.56,0.63-1.25,1.13-2.08,1.49C16.44,20.72,15.49,21,14.43,21H10c-0.55,0-1-0.45-1-1V8 c0-0.55,0.45-1,1-1h4.43C15.47,7,16.41,7.2,17.22,7.54z" />
+</svg>
+<div>
+<h3 class="subhead">About Divi</h3>
+<p>The World's #1 WordPress Theme & Visual Page Builder</p>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" rel="nofollow noreferrer" href="https://www.elegantthemesdemo.com/?et_fb=1" target="_blank">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Live Builder Demo</title>
+<path class="transparent" d="M20,11V9h0.84c0.55,0,1,0.45,1,1s-0.45,1-1,1H20z M9,20.09c0,0.55,0.45,1,1,1s1-0.45,1-1V20H9V20.09z M17.14,25 h-1.96c-0.55,0-1,0.45-1,1s0.45,1,1,1h1.96c0.55,0,1-0.45,1-1S17.69,25,17.14,25z M11.9,24.67c-0.37-0.24-0.65-0.6-0.79-1.01 c-0.18-0.52-0.75-0.79-1.27-0.61c-0.52,0.18-0.8,0.75-0.62,1.27c0.29,0.82,0.85,1.54,1.58,2.02c0.17,0.11,0.36,0.17,0.55,0.17 c0.33,0,0.64-0.16,0.84-0.45C12.49,25.6,12.36,24.98,11.9,24.67z M26,14.93c-0.55,0-1,0.45-1,1v1.96c0,0.55,0.45,1,1,1s1-0.45,1-1 v-1.96C27,15.38,26.55,14.93,26,14.93z M26,20.81c-0.55,0-1,0.45-1,1V23c0,0.17-0.02,0.35-0.07,0.51c-0.14,0.53,0.18,1.08,0.71,1.22 c0.09,0.02,0.17,0.03,0.26,0.03c0.44,0,0.85-0.3,0.97-0.75C26.96,23.69,27,23.35,27,23v-1.19C27,21.26,26.55,20.81,26,20.81z M23,25 h-1.94c-0.55,0-1,0.45-1,1s0.45,1,1,1h1.96c0.55,0,0.99-0.45,0.99-1S23.55,25,23,25z M25.84,13.03c0.11,0,0.22-0.02,0.32-0.05 c0.52-0.18,0.8-0.75,0.62-1.27c-0.28-0.83-0.84-1.55-1.57-2.03c-0.46-0.31-1.08-0.18-1.39,0.28c-0.31,0.46-0.18,1.08,0.28,1.39 c0.36,0.24,0.64,0.6,0.78,1.02C25.04,12.77,25.42,13.03,25.84,13.03z" />
+<path d="M18.88,9H20V3c0-1.66-1.34-3-3-3H3C1.34,0,0,1.34,0,3v14c0,1.66,1.34,3,3,3h6v-1.88c0-0.55,0.45-1,1-1 s1,0.45,1,1V20h6c1.66,0,3-1.34,3-3v-6h-1.12c-0.55,0-1-0.45-1-1S18.33,9,18.88,9z M11.06,12.5C11.02,12.66,11,12.83,11,13v1.2 c0,0.55-0.45,1-1,1s-1-0.45-1-1V13c0-0.34,0.04-0.67,0.13-1c0.1-0.4,0.44-0.68,0.82-0.74c0.13-0.02,0.26-0.01,0.4,0.02 C10.88,11.42,11.2,11.97,11.06,12.5z M14.96,11H13c-0.55,0-1.02-0.45-1.02-1s0.43-1,0.98-1h2c0.55,0,1,0.45,1,1S15.51,11,14.96,11z" />
+<path d="M27.87,23.78l-5.64-6.5c-0.13-0.15-0.32-0.23-0.52-0.23c-0.39,0-0.7,0.31-0.7,0.7v8.73 c0,0.06,0.01,0.12,0.03,0.18c0.1,0.26,0.39,0.39,0.64,0.29l1.95-0.83l0.53,1.27C24.33,27.77,24.71,28,25.1,28 c0.13,0,0.26-0.02,0.38-0.08c0.51-0.21,0.75-0.8,0.54-1.31l-0.5-1.21l2.16-0.82c0.06-0.02,0.11-0.05,0.16-0.1 C28.04,24.31,28.06,23.99,27.87,23.78z" />
+</svg>
+<div>
+<h3 class="subhead">Live Builder Demo</h3>
+<p>Try Out The Drag & Drop Page Builder for FREE!</p>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/layouts/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Layouts Library</title>
+<path class="transparent" d="M26,2v24H2V2H26 M26,0H2C0.9,0,0,0.9,0,2v24c0,1.1,0.9,2,2,2h24c1.1,0,2-0.9,2-2V2C28,0.9,27.1,0,26,0L26,0z" />
+<path class="transparent" d="M20,0h6c1.1,0,2,0.9,2,2v24c0,1.1-0.9,2-2,2h-6c-1.1,0-2-0.9-2-2V2C18,0.9,18.9,0,20,0z" />
+<path d="M2,0h24c1.1,0,2,0.9,2,2v6c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2V2C0,0.9,0.9,0,2,0z" />
+</svg>
+<div>
+<h3 class="subhead">Layouts Library</h3>
+<p>Preview 110+ Premade Websites & 880+ Premade Layouts</p>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/join/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Plans & Pricing</title>
+<path class="transparent" d="m14.56 5h8.44c1.1 0 2 .9 2 2v8.43c0 .29-.38.77-.45.84l-11.28 11.28c-.3.3-.69.45-1.08.45s-.78-.15-1.08-.45l-8.66-8.66c-.6-.6-.6-1.57 0-2.17l11.27-11.27c.07-.07.61-.44.84-.45z" />
+<path d="m20.89 5.75c.91 0 1.64-.74 1.64-1.64 0-.91-.74-1.64-1.64-1.64-.91 0-1.64.74-1.64 1.64s.74 1.64 1.64 1.64zm-6.33-5.75h8.44c1.1 0 2 .9 2 2v8.43c0 .29-.38.77-.45.84l-11.28 11.28c-.3.3-.69.45-1.08.45s-.78-.15-1.08-.45l-8.66-8.66c-.6-.6-.6-1.57 0-2.17l11.27-11.27c.07-.07.61-.44.84-.45z" />
+</svg>
+<div>
+<h3 class="subhead">Plans & Pricing</h3>
+<p>1 License. Unlimited Websites. Unlimited Users.</p>
+</div>
+</a>
+</li>
+</ul>
+<div class="card-inset-container accent-indigo">
+<ul class="menu-items">
+<li>
+<a class="icon-blurb" rel="noreferrer" href="https://www.elegantthemes.com/marketplace/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Divi Marketplace</title>
+<path class="transparent" d="M20.9,6H7.1A1.1,1.1,0,0,0,6,7.1V21.9A1.1,1.1,0,0,0,7.1,23H20.9A1.1,1.1,0,0,0,22,21.9V7.1A1.1,1.1,0,0,0,20.9,6ZM20,21H16V18a2,2,0,0,0-2-2h0a2,2,0,0,0-2,2v3H8V9H20Z" />
+<path d="M6.67,5a2,2,0,0,0-2,1.64L4,10.5a2.5,2.5,0,0,0,5,0,2.5,2.5,0,0,0,5,0,2.5,2.5,0,0,0,5,0,2.5,2.5,0,0,0,5,0l-.7-3.86a2,2,0,0,0-2-1.64Z" />
+</svg>
+<div>
+<h3 class="subhead">Divi Marketplace</h3>
+<p>Third Party Divi Modules & Themes</p>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/hosting/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Divi Hosting</title>
+<path d="M22,5H6A1,1,0,0,0,5,6V9a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V6A1,1,0,0,0,22,5ZM8,8H7V7H8Zm3,0H10V7h1ZM21,8H15V7h6Zm1,9H6a1,1,0,0,0-1,1v3a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V18A1,1,0,0,0,22,17ZM8,20H7V19H8Zm3,0H10V19h1Zm10,0H15V19h6Zm1-9H6a1,1,0,0,0-1,1v3a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V12A1,1,0,0,0,22,11ZM8,14H7V13H8Zm3,0H10V13h1Zm10,0H15V13h6Z" />
+</svg>
+<div>
+<h3 class="subhead">Divi Hosting</h3>
+<p>Fast WordPress Hosting For Divi</p>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" rel="noreferrer" href="https://www.facebook.com/groups/DiviThemeUsers/" target="_blank">
+<svg viewbox="0 0 28 28" class="icon-small">
+<title>Divi Facebook Group</title>
+<path d="M17.35,14H15l0,9l-3,0v-9l-2,0v-3h2V9.07C12,5,15.69,5,15.69,5L18,5l0,3l-1.93,0C15.45,8,15,8.42,15,9.2l0,1.8 l2.67,0L17.35,14z" />
+</svg>
+<div>
+<h3 class="subhead">Divi Facebook Group</h3>
+<p>68k Facebook Members & Counting</p>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" rel="noreferrer" href="https://www.meetup.com/pro/Divi" target="_blank">
+<svg viewbox="0 0 28 28" class="icon-small">
+<title>Divi Meetups</title>
+<path class="transparent" d="M10,18.21c0,2.38-6,2.38-6,0C4,14.74,5.42,13,7,13C8.58,13,10,14.74,10,18.21z M7,8c-1.1,0-2,0.9-2,2s0.9,2,2,2 s2-0.9,2-2S8.1,8,7,8z" />
+<path class="transparent" d="M24,18.21c0,2.38-6,2.38-6,0c0-3.48,1.42-5.21,3-5.21C22.58,13,24,14.74,24,18.21z M21,8c-1.1,0-2,0.9-2,2 s0.9,2,2,2s2-0.9,2-2S22.1,8,21,8z" />
+<path d="M19,20c0,4-10,4-10,0c0-4.74,2.26-7,5-7S19,15.26,19,20z M17,9c0,1.66-1.34,3-3,3s-3-1.34-3-3s1.34-3,3-3 S17,7.34,17,9z" />
+</svg>
+<div>
+<h3 class="subhead">Divi Meetups</h3>
+<p>Attend or Organize a Divi Meetup</p>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<a class="button fullwidth-button accent-blue" href="https://www.elegantthemes.com/gallery/divi/">Learn More About Divi</a>
+</div>
+</li>
+<li class="menu-wrapper">
+<a class="menu-item accent-pink" href="https://www.elegantthemes.com/products/">All Products
+<svg viewBox="0 0 28 28" class="menu-expand icon-small">
+<title>Expand Menu</title>
+<path d="M18,13h-3v-3c0-0.55-0.45-1-1-1s-1,0.45-1,1v3h-3c-0.55,0-1,0.45-1,1s0.45,1,1,1h3v3c0,0.55,0.45,1,1,1 s1-0.45,1-1v-3h3c0.55,0,1-0.45,1-1S18.55,13,18,13z" />
+</svg>
+<svg viewBox="0 0 28 28" class="menu-collapse icon-small">
+<title>Collapse Menu</title>
+<path d="M14.51,7.22c-0.23-0.3-0.8-0.3-1.03,0l-2.4,2.95c-0.23,0.3,0,0.83,0.46,0.83H13v9c0,0.55,0.45,1,1,1s1-0.45,1-1 v-9h1.45c0.46,0,0.68-0.43,0.46-0.83L14.51,7.22z" />
+</svg>
+</a>
+<div class="card card-medium sub-menu sub-menu-wide">
+<ul class="menu-items primary-menu-items">
+<li class="accent-purple">
+<a class="icon-blurb" href="https://www.elegantthemes.com/gallery/divi/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Divi Theme</title>
+<path d="M14,2c6.62,0,12,5.38,12,12s-5.38,12-12,12S2,20.62,2,14S7.38,2,14,2 M14,0C6.27,0,0,6.27,0,14 c0,7.73,6.27,14,14,14s14-6.27,14-14C28,6.27,21.73,0,14,0L14,0z" />
+<path d="M17.92,17.49c0.37-0.44,0.65-0.96,0.84-1.55c0.19-0.6,0.44-2.64-0.01-3.98c-0.2-0.59-0.48-1.11-0.85-1.54 c-0.37-0.43-0.82-0.76-1.36-1C16,9.18,15.36,9,14.65,9H11v10h3.65c0.72,0,1.36-0.24,1.91-0.49C17.1,18.27,17.56,17.92,17.92,17.49z M17.22,7.54c0.81,0.34,1.51,0.83,2.08,1.45c0.56,0.62,0.99,1.36,1.28,2.2C20.86,12.03,21,13.01,21,14c0,0.97-0.13,1.83-0.41,2.67 c-0.28,0.84-0.7,1.59-1.26,2.21c-0.56,0.63-1.25,1.13-2.08,1.49C16.44,20.72,15.49,21,14.43,21H10c-0.55,0-1-0.45-1-1V8 c0-0.55,0.45-1,1-1h4.43C15.47,7,16.41,7.2,17.22,7.54z" />
+</svg>
+<div>
+<h3 class="subhead">Divi All-in-One Theme</h3>
+<p>The World's #1 WordPress Theme & Visual Page Builder</p>
+</div>
+</a>
+</li>
+<li class="accent-green">
+<a class="icon-blurb" href="https://www.elegantthemes.com/gallery/extra/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Extra Theme</title>
+<path d="M28,10V4H0v3h3v14H0v3h28v-6h-3v3H6v-5h11v2h3v-7h-3v2H6V7h19v3H28z" />
+</svg>
+<div>
+<h3 class="subhead">Extra Magazine Theme</h3>
+<p>The perfect theme for bloggers and online-publications</p>
+</div>
+</a>
+</li>
+<li class="accent-pink">
+<a class="icon-blurb" href="https://www.elegantthemes.com/gallery/divi/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Divi Builder Plugin</title>
+<path d="M26.71,19.22l-1.2,1.6l-1.05-0.78l1.2-1.6c0.22-0.29,0.16-0.7-0.13-0.91c-0.29-0.22-0.7-0.16-0.91,0.13 l-1.2,1.6c-0.39-0.29-0.93-0.21-1.22,0.18l-1.22,1.63c-0.62,0.83-0.72,1.9-0.34,2.79l0.07,0.07c-2.02,1.38-4.46,2.17-7.1,2.08 c-6.21-0.2-11.37-5.33-11.6-11.54C1.75,7.63,7.23,2,14,2c6.32,0,11.51,4.91,11.97,11.11C26,13.62,26.44,14,26.95,14h0.03 c0.58,0,1.03-0.5,0.99-1.08C27.37,5.18,20.48-0.8,12.41,0.09C5.99,0.8,0.8,5.99,0.09,12.41C-0.84,20.85,5.74,28,14,28 c3.06,0,5.88-1,8.18-2.67l0.07,0.06c1.15,0.44,2.5,0.09,3.27-0.95l1.22-1.63c0.29-0.39,0.21-0.93-0.17-1.22l1.2-1.6 c0.22-0.29,0.16-0.7-0.13-0.91C27.34,18.87,26.93,18.93,26.71,19.22z" />
+<path d="M17.92,17.49c0.37-0.44,0.65-0.96,0.84-1.55c0.19-0.6,0.44-2.64-0.01-3.98c-0.2-0.59-0.48-1.11-0.85-1.54 c-0.37-0.43-0.82-0.76-1.36-1C16,9.18,15.36,9,14.65,9H11v10h3.65c0.72,0,1.36-0.24,1.91-0.49C17.1,18.27,17.56,17.92,17.92,17.49z M17.22,7.54c0.81,0.34,1.51,0.83,2.08,1.45c0.56,0.62,0.99,1.36,1.28,2.2C20.86,12.03,21,13.01,21,14c0,0.97-0.13,1.83-0.41,2.67 c-0.28,0.84-0.7,1.59-1.26,2.21c-0.56,0.63-1.25,1.13-2.08,1.49C16.44,20.72,15.49,21,14.43,21H10c-0.55,0-1-0.45-1-1V8 c0-0.55,0.45-1,1-1h4.43C15.47,7,16.41,7.2,17.22,7.54z" />
+</svg>
+<div>
+<h3 class="subhead">Divi Builder Plugin</h3>
+<p>Harness the power of Divi with any WordPress theme.</p>
+</div>
+</a>
+</li>
+<li class="accent-indigo">
+<a class="icon-blurb" href="https://www.elegantthemes.com/plugins/bloom/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Bloom Plugin</title>
+<path d="M28.31,14c0-2.24-1.27-4.43-3.5-6.06c-0.24-2.17-1.14-4.37-2.94-5.7c-2.21-1.63-5.15-1.42-7.56-0.36 c-2.38-1.05-5.29-1.26-7.5,0.32c-1.84,1.32-2.77,3.55-3,5.74c-1.94,1.42-3.5,3.58-3.5,6.06c0,2.49,1.56,4.64,3.5,6.06 c0.24,2.17,1.14,4.37,2.94,5.7c2.21,1.63,5.15,1.42,7.56,0.36c2.38,1.05,5.29,1.26,7.5-0.32c1.84-1.32,2.77-3.55,3-5.74 C27.04,18.43,28.31,16.24,28.31,14z M3.83,17.37c-0.79-0.85-1.39-1.93-1.47-3.11c-0.07-1.01,0.28-2,0.84-2.84 C4.43,9.6,6.59,8.36,8.72,7.94c-0.36,0.33-0.69,0.7-0.99,1.09l-2.65,4.46C4.4,14.67,4,16.02,3.83,17.37 C2.88,16.34,3.84,17.3,3.83,17.37z M8.94,17.1L8.94,17.1c-1.1-1.9-1.1-4.3,0-6.2l0,0c1.1-1.9,3.18-3.1,5.37-3.1 c2.2,0,4.27,1.2,5.37,3.1l0,0c1.1,1.9,1.1,4.3,0,6.2l0,0c-1.1,1.9-3.18,3.1-5.37,3.1C12.11,20.21,10.04,19,8.94,17.1z M22.82,8.57 c0.08,1.25-0.08,2.51-0.46,3.62c-0.11-0.48-0.26-0.94-0.45-1.39l-2.54-4.53c-0.65-1.12-1.6-2.16-2.73-3.02 c1.63-0.37,3.39-0.12,4.58,1.14C22.28,5.49,22.72,7.07,22.82,8.57C22.9,9.82,22.67,6.28,22.82,8.57z M13.86,3.92 c1.09,0.54,2.1,1.29,2.9,2.21c-0.79-0.25-1.62-0.37-2.45-0.37h-4.17c-1.29,0-2.67,0.3-3.99,0.86c0.42-1.37,1.3-2.65,2.66-3.2 C10.45,2.74,12.34,3.16,13.86,3.92C13.95,3.96,12.75,3.37,13.86,3.92z M5.81,19.43c-0.08-1.25,0.08-2.51,0.46-3.62 c0.11,0.49,0.27,0.97,0.46,1.43l2.53,4.49c0.65,1.12,1.6,2.16,2.73,3.02c-1.63,0.37-3.39,0.12-4.58-1.14 C6.35,22.51,5.9,20.93,5.81,19.43C5.72,18.18,5.95,21.72,5.81,19.43z M14.76,24.08c-1.09-0.54-2.1-1.29-2.9-2.21 c0.79,0.25,1.62,0.37,2.45,0.37h4.17c1.37,0,2.73-0.33,3.99-0.86c-0.42,1.37-1.3,2.65-2.66,3.2 C18.18,25.26,16.29,24.84,14.76,24.08C14.68,24.04,15.87,24.63,14.76,24.08z M23.27,18.65c-1.04,0.7-2.22,1.18-3.37,1.41 c0.34-0.32,0.66-0.66,0.95-1.04l2.69-4.52c0.68-1.18,1.08-2.53,1.25-3.88c1.1,1.18,1.77,2.78,1.35,4.39 C25.74,16.56,24.56,17.79,23.27,18.65C22.23,19.35,25.18,17.38,23.27,18.65z" />
+</svg>
+<div>
+<h3 class="subhead">Bloom Email Optin Plugin</h3>
+<p>The ultimate email opt-in plugin for WordPress</p>
+</div>
+</a>
+</li>
+<li class="accent-orange">
+<a class="icon-blurb" href="https://www.elegantthemes.com/plugins/monarch/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Monarch Plugin</title>
+<path d="M0,1.5v25.02c0,0.6,0.74,1.04,1.19,0.74l5.22-2.68C6.56,24.5,7,24.06,7,23.62V12.07c0-0.3,0.31-0.6,0.61-0.45 l6.1,2.98c0.3,0.15,0.45,0.15,0.74,0l6.1-2.98c0.3-0.15,0.46,0,0.46,0.45v11.77c0,0.3,0.29,0.6,0.59,0.74l5.22,2.68 c0.6,0.3,1.19-0.15,1.19-0.74V1.5c0-0.6-0.74-1.04-1.19-0.74L14.15,7.01L1.19,0.75C0.74,0.45,0,0.75,0,1.5z" />
+</svg>
+<div>
+<h3 class="subhead">Monarch Social Media Plugin</h3>
+<p>Built to get you more shares and more followers.</p>
+</div>
+</a>
+</li>
+</ul>
+<a class="button fullwidth-button accent-purple" href="https://www.elegantthemes.com/join/">Join To Download</a>
+</div>
+</li>
+<li class="menu-wrapper">
+<a class="menu-item accent-pink" href="https://www.elegantthemes.com/contact/">Contact
+<svg viewBox="0 0 28 28" class="menu-expand icon-small">
+<title>Expand Menu</title>
+<path d="M18,13h-3v-3c0-0.55-0.45-1-1-1s-1,0.45-1,1v3h-3c-0.55,0-1,0.45-1,1s0.45,1,1,1h3v3c0,0.55,0.45,1,1,1 s1-0.45,1-1v-3h3c0.55,0,1-0.45,1-1S18.55,13,18,13z" />
+</svg>
+<svg viewBox="0 0 28 28" class="menu-collapse icon-small">
+<title>Collapse Menu</title>
+<path d="M14.51,7.22c-0.23-0.3-0.8-0.3-1.03,0l-2.4,2.95c-0.23,0.3,0,0.83,0.46,0.83H13v9c0,0.55,0.45,1,1,1s1-0.45,1-1 v-9h1.45c0.46,0,0.68-0.43,0.46-0.83L14.51,7.22z" />
+</svg>
+</a>
+<div class="card card-medium sub-menu accent-blue">
+<ul class="menu-items">
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/contact/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Contact</title>
+<path class="transparent" d="M22,21H6c-0.55,0-1-0.45-1-1V8c0-0.55,0.45-1,1-1h16c0.55,0,1,0.45,1,1v12C23,20.55,22.55,21,22,21z" />
+<path d="M23,9.5V8c0-0.55-0.45-1-1-1H6C5.45,7,5,7.45,5,8v1.5l9,6.5L23,9.5z" />
+</svg>
+<div>
+<h3 class="subhead">Get In Touch</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/contact/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Sales Questions</title>
+<path class="transparent" d="M11,10H22c0.55,0,1,0.45,1,1v12l-3-3h-9c-0.55,0-1-0.45-1-1V11C10,10.45,10.45,10,11,10z" />
+<path d="M17,5H6C5.45,5,5,5.45,5,6v12l3-3h9c0.55,0,1-0.45,1-1V6C18,5.45,17.55,5,17,5z" />
+</svg>
+<div>
+<h3 class="subhead">Sales Questions?</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/contact/">
+<svg viewBox="0 0 28 28" class="icon-small" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Accounts & Billing</title>
+<path class="transparent" d="M23,14c0,4.97-4.03,9-9,9s-9-4.03-9-9s4.03-9,9-9S23,9.03,23,14z" />
+<path d="M18.5,20.3c0,3.6-9,3.6-9,0c0-4.27,2.04-6.3,4.5-6.3S18.5,16.03,18.5,20.3z M16.5,10.5c0,1.38-1.12,2.5-2.5,2.5 s-2.5-1.12-2.5-2.5S12.62,8,14,8S16.5,9.12,16.5,10.5z" />
+</svg>
+<div>
+<h3 class="subhead">Accounts & Billing</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/members-area/help/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Technical Support</title>
+<path class="transparent" d="M12.16,10.01l5.83,5.83c1.32-0.5,2.87-0.22,3.93,0.84c1.14,1.14,1.38,2.84,0.72,4.21l-2.17-2.17 c-0.48-0.48-1.25-0.48-1.73,0c-0.48,0.48-0.48,1.25,0,1.73l2.18,2.18c-1.38,0.67-3.09,0.43-4.23-0.71c-1.06-1.06-1.34-2.59-0.85-3.9 l-5.85-5.85c-1.31,0.49-2.85,0.2-3.9-0.85C4.94,10.17,4.7,8.48,5.36,7.1l2.17,2.17c0.48,0.48,1.25,0.48,1.73,0 c0.48-0.48,0.48-1.25,0-1.73L7.08,5.37c1.38-0.67,3.09-0.43,4.23,0.71C12.38,7.15,12.66,8.69,12.16,10.01L12.16,10.01z" />
+<path d="M8.33,18.64l4.01-4l-0.49-0.49l7.6-8.87c0.37-0.37,0.96-0.37,1.33,0l1.95,1.95c0.37,0.37,0.37,0.96,0,1.33 l-8.8,7.66l-0.54-0.54l-4.01,4l-1.36,2.55L6.05,23L5,21.95l0.8-2L8.33,18.64L8.33,18.64z" />
+</svg>
+<div>
+<h3 class="subhead">Technical Support</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/forum/">
+<svg viewbox="0 0 28 28" class="icon-small">
+<title>Community</title>
+<path class="transparent" d="M10,18.21c0,2.38-6,2.38-6,0C4,14.74,5.42,13,7,13C8.58,13,10,14.74,10,18.21z M7,8c-1.1,0-2,0.9-2,2s0.9,2,2,2 s2-0.9,2-2S8.1,8,7,8z" />
+<path class="transparent" d="M24,18.21c0,2.38-6,2.38-6,0c0-3.48,1.42-5.21,3-5.21C22.58,13,24,14.74,24,18.21z M21,8c-1.1,0-2,0.9-2,2 s0.9,2,2,2s2-0.9,2-2S22.1,8,21,8z" />
+<path d="M19,20c0,4-10,4-10,0c0-4.74,2.26-7,5-7S19,15.26,19,20z M17,9c0,1.66-1.34,3-3,3s-3-1.34-3-3s1.34-3,3-3 S17,7.34,17,9z" />
+</svg>
+<div>
+<h3 class="subhead">Ask The Community</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/documentation/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Documentation</title>
+<path d="M9.47,17h7.04c0.28,0,0.5,0.22,0.5,0.5s-0.22,0.5-0.5,0.5H9.47c-0.28,0-0.5-0.22-0.5-0.5S9.2,17,9.47,17z M9.47,14h7.04c0.28,0,0.5,0.22,0.5,0.5s-0.22,0.5-0.5,0.5H9.47c-0.28,0-0.5-0.22-0.5-0.5S9.2,14,9.47,14z M9.47,11h7.04 c0.28,0,0.5,0.22,0.5,0.5s-0.22,0.5-0.5,0.5H9.47c-0.28,0-0.5-0.22-0.5-0.5S9.2,11,9.47,11z M12.47,8h4.04c0.28,0,0.5,0.22,0.5,0.5 S16.79,9,16.51,9h-4.04c-0.28,0-0.5-0.22-0.5-0.5S12.19,8,12.47,8z M7,21H19c0.55,0,1-0.45,1-1V6c0-0.55-0.45-1-1-1H7 C6.45,5,6,5.45,6,6V20C6,20.55,6.45,21,7,21z" />
+<path class="transparent" d="M21,7h-1v13c0,0.55-0.45,1-1,1H8v1c0,0.55,0.45,1,1,1h12c0.55,0,1-0.45,1-1V8C22,7.45,21.55,7,21,7z" />
+</svg>
+<div>
+<h3 class="subhead">Documentation</h3>
+</div>
+</a>
+</li>
+</ul>
+<a class="button fullwidth-button launch_intercom" href="https://www.elegantthemes.com/contact/support/">Chat With Us!</a>
+</div>
+</li>
+<li class="menu-wrapper">
+<a class="menu-item accent-pink" href="https://www.elegantthemes.com/members-area/">Account
+<svg viewBox="0 0 28 28" class="menu-expand icon-small">
+<title>Expand Menu</title>
+<path d="M18,13h-3v-3c0-0.55-0.45-1-1-1s-1,0.45-1,1v3h-3c-0.55,0-1,0.45-1,1s0.45,1,1,1h3v3c0,0.55,0.45,1,1,1 s1-0.45,1-1v-3h3c0.55,0,1-0.45,1-1S18.55,13,18,13z" />
+</svg>
+<svg viewBox="0 0 28 28" class="menu-collapse icon-small">
+<title>Collapse Menu</title>
+<path d="M14.51,7.22c-0.23-0.3-0.8-0.3-1.03,0l-2.4,2.95c-0.23,0.3,0,0.83,0.46,0.83H13v9c0,0.55,0.45,1,1,1s1-0.45,1-1 v-9h1.45c0.46,0,0.68-0.43,0.46-0.83L14.51,7.22z" />
+</svg>
+</a>
+<div class="card card-medium centered sub-menu accent-indigo et-main-account-menu">
+<ul class="menu-items hide-item">
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/members-area/account/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Account Details</title>
+<path class="transparent" d="M23,14c0,4.97-4.03,9-9,9s-9-4.03-9-9s4.03-9,9-9S23,9.03,23,14z" />
+<path d="M18.5,20.3c0,3.6-9,3.6-9,0c0-4.27,2.04-6.3,4.5-6.3S18.5,16.03,18.5,20.3z M16.5,10.5c0,1.38-1.12,2.5-2.5,2.5 s-2.5-1.12-2.5-2.5S12.62,8,14,8S16.5,9.12,16.5,10.5z" />
+</svg>
+<div>
+<h3 class="subhead">Account Details</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/members-area/#mydownloads">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Downloads</title>
+<path d="M22,21v1a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V21a1,1,0,0,1,1-1H21A1,1,0,0,1,22,21Zm-9.79-4.42a1,1,0,0,0,.21.21l.94.95a.91.91,0,0,0,1.28,0l.94-.95a1,1,0,0,0,.21-.21l3-3A.9.9,0,0,0,18.2,12H16V6a1,1,0,0,0-1-1H13a1,1,0,0,0-1,1v6H9.8a.9.9,0,0,0-.63,1.54Z" />
+</svg>
+<div>
+<h3 class="subhead">My Downloads</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/members-area/help/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Support</title>
+<path class="transparent" d="M12.16,10.01l5.83,5.83c1.32-0.5,2.87-0.22,3.93,0.84c1.14,1.14,1.38,2.84,0.72,4.21l-2.17-2.17 c-0.48-0.48-1.25-0.48-1.73,0c-0.48,0.48-0.48,1.25,0,1.73l2.18,2.18c-1.38,0.67-3.09,0.43-4.23-0.71c-1.06-1.06-1.34-2.59-0.85-3.9 l-5.85-5.85c-1.31,0.49-2.85,0.2-3.9-0.85C4.94,10.17,4.7,8.48,5.36,7.1l2.17,2.17c0.48,0.48,1.25,0.48,1.73,0 c0.48-0.48,0.48-1.25,0-1.73L7.08,5.37c1.38-0.67,3.09-0.43,4.23,0.71C12.38,7.15,12.66,8.69,12.16,10.01L12.16,10.01z" />
+<path d="M8.33,18.64l4.01-4l-0.49-0.49l7.6-8.87c0.37-0.37,0.96-0.37,1.33,0l1.95,1.95c0.37,0.37,0.37,0.96,0,1.33 l-8.8,7.66l-0.54-0.54l-4.01,4l-1.36,2.55L6.05,23L5,21.95l0.8-2L8.33,18.64L8.33,18.64z" />
+</svg>
+<div>
+<h3 class="subhead">Customer Support</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/members-area/billing/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Billing</title>
+<path d="M20,6l-2-2l-2.08,2L14,4l-1.96,2L10,4L8,6L6,4v20l2-2l2,2l2.08-2L14,24l1.96-2L18,24l2-2l2,2V4L20,6z M9.47,9 h9.04c0.28,0,0.5,0.22,0.5,0.5s-0.22,0.5-0.5,0.5H9.47c-0.28,0-0.5-0.22-0.5-0.5S9.19,9,9.47,9z M13.51,19H9.47 c-0.28,0-0.5-0.22-0.5-0.5S9.2,18,9.47,18h4.04c0.28,0,0.5,0.22,0.5,0.5S13.79,19,13.51,19z M13.51,16H9.47 c-0.28,0-0.5-0.22-0.5-0.5S9.2,15,9.47,15h4.04c0.28,0,0.5,0.22,0.5,0.5S13.79,16,13.51,16z M19,18.5c0,0.28-0.22,0.5-0.5,0.5h-2 c-0.28,0-0.5-0.22-0.5-0.5v-3c0-0.28,0.22-0.5,0.5-0.5h2c0.28,0,0.5,0.22,0.5,0.5V18.5z M18.51,13H9.47c-0.28,0-0.5-0.22-0.5-0.5 S9.2,12,9.47,12h9.04c0.28,0,0.5,0.22,0.5,0.5S18.79,13,18.51,13z" />
+</svg>
+<div>
+<h3 class="subhead">Billing Info</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/members-area/api/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Username & API Key</title>
+<path d="M18,12c-0.83,0-1.61,0.22-2.3,0.58L7.56,4.44L5.44,6.56l1,1l-2,2l3,3l2-2l4.14,4.14C13.22,15.39,13,16.17,13,17 c0,2.76,2.24,5,5,5s5-2.24,5-5C23,14.24,20.76,12,18,12z M18,19c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2c1.1,0,2,0.9,2,2 C20,18.1,19.1,19,18,19z" />
+</svg>
+<div>
+<h3 class="subhead">Username & API Key</h3>
+</div>
+</a>
+</li>
+<li>
+<a class="icon-blurb" href="https://www.elegantthemes.com/members-area/membership/">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Membership</title>
+<path d="M8.49,20c-0.85,0-1.55-0.73-1.47-1.58C7.34,14.75,8.31,14,10,14c1.69,0,2.67,0.75,2.98,4.42 c0.07,0.85-0.62,1.58-1.47,1.58L8.49,20z M12,11c0,1.1-0.9,2-2,2s-2-0.9-2-2s0.9-2,2-2S12,9.9,12,11z" />
+<path class="transparent" d="M22,7H6C5.45,7,5,7.45,5,8v12c0,0.55,0.45,1,1,1h16c0.55,0,1-0.45,1-1V8C23,7.45,22.55,7,22,7z M20,16h-4 c-0.55,0-1-0.45-1-1c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1C21,15.55,20.55,16,20,16z M20,12h-4c-0.55,0-1-0.45-1-1 c0-0.55,0.45-1,1-1h4c0.55,0,1,0.45,1,1C21,11.55,20.55,12,20,12z" />
+</svg>
+<div>
+<h3 class="subhead">Manage Membership</h3>
+</div>
+</a>
+</li>
+<li>
+<form method="POST" action="/members-area/logout/" id="main-menu-logout-form">
+<input type="hidden" name="_token" value="">
+<a class="icon-blurb" href="#" onclick="event.preventDefault(); this.closest('form').submit();">
+<svg viewBox="0 0 28 28" class="icon-small">
+<title>Log Out</title>
+<path d="M21.58,15.79c0.08-0.06,0.15-0.13,0.21-0.21l0.94-0.94c0.35-0.35,0.35-0.92,0-1.27l-0.94-0.94 c-0.06-0.08-0.13-0.15-0.21-0.21l-3.04-3.04C17.97,8.6,17,9,17,9.8V12h-5c-0.55,0-1,0.45-1,1v2c0,0.55,0.45,1,1,1h5v2.2 c0,0.8,0.97,1.21,1.54,0.64L21.58,15.79z" />
+<path class="transparent" d="M20,21H8V7h12l2,1.8V6c0-0.55-0.45-1-1-1H7C6.45,5,6,5.45,6,6v16c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1v-2.8 L20,21z" />
+</svg>
+<div>
+<h3 class="subhead">Log Out</h3>
+</div>
+</a>
+</form>
+</li>
+</ul>
+<a id="account-downloads-button" class="button fullwidth-button hide-item" href="https://www.elegantthemes.com/members-area/#mydownloads">My Downloads</a>
+<div class="et_account_login_form">
+<form name="et-loginform" action="https://www.elegantthemes.com/members-area/login/" method="POST">
+<input type="hidden" class="et_token_field" name="_token" value="" autocomplete="off">
+<div class="et_manage_input">
+<input type="text" placeholder="Username" autocomplete="off" name="username">
+<label>Username</label>
+</div>
+<div class="et_manage_input">
+<input type="password" placeholder="Password" autocomplete="off" name="password">
+<label>Password</label>
+</div>
+<label for="remember_me" style="display: block; text-align: left;">
+<input type="checkbox" id="remember_me" name="remember">
+<span>Remember me</span>
+</label>
+<input class="button fullwidth-button" type="submit" name="submit" id="et-wp-submit" value="Member Login">
+<p>Forgot Your <a href="https://www.elegantthemes.com/members-area/retrieve-username">Username</a> or <a href="https://www.elegantthemes.com/members-area/forgot-password/">Password</a>?</p>
+</form>
+</div>
+</div>
+</li>
+</ul>
+<div class="pricing-button-wrapper">
+<a id="pricing-button" class="button primary-button accent-pink" href="https://www.elegantthemes.com/join/"><span>Pricing</span></a>
+</div>
+</nav>
+<span class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</span>
+</div>
+</div>
+<section>
+<div class="row-container">
+<div class="row">
+<div class="column-container">
+<div class="column centered accent-blue">
+<h1>How to Create a Custom WordPress 404 Error Page</h1>
+<p class="lead">Posted on June 30, 2021 by <a href="https://www.elegantthemes.com/blog/author/randy-brown" title="Posts by Randy A. Brown" rel="author">Randy A. Brown</a> in <a href="https://www.elegantthemes.com/blog/category/wordpress" rel="category tag">WordPress</a> | <span class="comments-number"><a href="https://www.elegantthemes.com/blog/wordpress/custom-wordpress-404-error-page#respond">3 comments</a></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-container article-container ">
+<div class="row">
+<div class="column-container">
+<div class="column card accent-blue">
+<div class="post-thumbnail">
+<img src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/shutterstock_1075475231.jpg" alt="How to Create a Custom WordPress 404 Error Page" />
+</div> 
+<article id="post-155361" class="entry et_box clearfix post-155361 post type-post status-publish format-standard has-post-thumbnail category-wordpress tag-custom-404-page-wordpress">
+<p>Chances are high that you’ve landed on a 404 page and immediately left the website because it was less than helpful. A 404 page is what WordPress displays when someone enters or clicks on a URL that doesn’t exist on your website. This page is a generic error that just informs the visitor the page wasn’t found. In this article, we’ll explore how to create a custom 404 page for WordPress. Along the way, we&#8217;ll see both good and bad designs.</p>
+<h2>Why Create a Custom 404 Page for WordPress?</h2>
+<p>It’s tempting to skip designing the 404 page because you hope no one will see it. However, it needs to be helpful to your visitors. It can be just as important as any other page. A general message is a bad user experience. It doesn’t look good and it gives them no reason to stay on your website.</p>
+<p>First, let’s look at the generic page we’re trying to avoid.</p>
+<h3>Generic 404 Page</h3>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Generic-404-Page.png" alt="Generic 404 Page" width="960" height="229" class="with-border aligncenter size-full wp-image-155487" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Generic-404-Page.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Generic-404-Page-300x72.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Generic-404-Page-768x183.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Generic-404-Page-610x146.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>The standard 404 page that WordPress displays is just an error message. It’s placed within the body content area and shows your header, footer, and sidebars if you have them.</p>
+<p>Unfortunately, it isn’t helpful. It’s kind of like asking a store worker if something you’re looking for is on the aisle you’re in and they just say no. You want them to point you to the correct aisle. You want more information.</p>
+<p>A 404 page should give you more information. It should be helpful. It should provide tools, links, advice, or some form of help. You don’t want to be left alone in the aisle not knowing where to go next.</p>
+<h2>Custom 404 Page Examples</h2>
+<p>There are thousands of amazing 404 pages across the web. Some are funny, some are serious. Some are more helpful than others. A few are plain, while others are gorgeous. Here’s a look at a few 404 pages to get an idea of how they’re designed. Some are simple and boring while others are helpful and look great.</p>
+<h3>1. Google</h3>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Google.png" alt="google" width="960" height="454" class="with-border aligncenter size-full wp-image-155481" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Google.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Google-300x142.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Google-768x363.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Google-610x288.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p><a href="https://google.com/404" target="_blank" rel="noopener" "nofollow">Google’s (not WordPress) 404 page</a> is simple. It’s a small area of content in the center of the screen. The message just tells you there’s an error and provides a graphic of a robot in pieces. It doesn’t provide other information, but it’s Google, so all you have to do is type something else in the search bar.</p>
+<h3>2. WordPress.org</h3>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-WordPress-org.png" alt="WordPress.org" width="960" height="557" class="with-border aligncenter size-full wp-image-155486" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-WordPress-org.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-WordPress-org-300x174.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-WordPress-org-768x446.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-WordPress-org-610x354.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p><a href="https://wordpress.org/404/" target="_blank" rel="noopener" "nofollow">WordPress.org’s 404 page</a> displays their standard header and footer. The body includes a title to show the page wasn’t found, a short explanation with a touch of humor, and then a list of links to help guide you. The links focus on being helpful.</p>
+<h3>3. WordPress.com</h3>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-WordPress-com.png" alt="WordPress.com" width="960" height="573" class="with-border aligncenter size-full wp-image-155485" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-WordPress-com.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-WordPress-com-300x179.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-WordPress-com-768x458.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-WordPress-com-610x364.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p><a href="https://wordpress.com/404" target="_blank" rel="noopener" "nofollow">WordPress.com’s 404 page</a> removes the header and footer. It shows a graphic, a title, a description with clickable links, a search box, and the WordPress.com logo. The links are helpful.</p>
+<h3>4. Elegant Themes</h3>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Elegant-Themes.png" alt="Elegant Themes" width="960" height="348" class="with-border aligncenter size-full wp-image-155480" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Elegant-Themes.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Elegant-Themes-300x109.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Elegant-Themes-768x278.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Elegant-Themes-610x221.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p><a href="https://www.elegantthemes.com/blog/404">Elegant Themes’ 404 page</a> (because I know you’re going to look anyway) shows the ET header, a large title with a small explanation, and a button as a CTA. You have access to almost everything from here.</p>
+<h3>5. Twenty Twenty-One</h3>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Twenty-Twenty-One.png" alt="Twenty Twenty-One" width="960" height="643" class="with-border aligncenter size-full wp-image-155484" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Twenty-Twenty-One.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Twenty-Twenty-One-300x201.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Twenty-Twenty-One-768x514.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Twenty-Twenty-One-610x409.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>WordPress’s Twenty Twenty-One theme has a 404 page that uses your primary and footer menus. It has a large title. The body has a short description and a search box. Lines are used for styling. The background matches the site.</p>
+<h3>6. Twenty Twenty</h3>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Twenty-Twenty-Twenty.png" alt="Twenty Twenty" width="960" height="485" class="with-border aligncenter size-full wp-image-155483" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Twenty-Twenty-Twenty.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Twenty-Twenty-Twenty-300x152.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Twenty-Twenty-Twenty-768x388.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Twenty-Twenty-Twenty-610x308.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>WordPress’s Twenty Twenty theme displays the header and footer. The body shows a large title in the center, an explanation, and a search box. All use the theme’s colors.</p>
+<h3>7. Slack</h3>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Slack.png" alt="Slack" width="960" height="540" class="with-border aligncenter size-full wp-image-155482" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Slack.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Slack-300x169.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Slack-768x432.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Slack-610x343.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p><a href="https://slack.com/404" target="_blank" rel="noopener" "nofollow">Slack’s (non WordPress) 404 page</a> shows a box in the center with information about the error with a link to the help center. All the menus are here, too. The interesting part is the background. It’s a cartoon background that scrolls right or left to follow your mouse. Animated animals move across the screen.</p>
+<h3>8. Amazon</h3>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Amazon.png" alt="Amazon" width="960" height="485" class="with-border aligncenter size-full wp-image-155479" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Amazon.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Amazon-300x152.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Amazon-768x388.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Custom-404-Page-Examples-Amazon-610x308.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p><a href="https://www.amazon.com/404" target="_blank" rel="noopener" "nofollow">Amazon’s (also not WordPress) 404 page</a> includes the Amazon logo with a search box, a large message, a smaller message with a link to the home page, and a photo of an animal with a link to learn more. It includes lots of different photos that can be displayed. They’re chosen at random.</p>
+<h2>404 Page Content</h2>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/404-Page-Content.png" alt="" width="960" height="485" class="with-border aligncenter size-full wp-image-155496" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/404-Page-Content.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/404-Page-Content-300x152.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/404-Page-Content-768x388.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/404-Page-Content-610x308.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>So, what does a 404 page need? We see a few common elements in the examples above.</p>
+<p>First, it needs to be helpful. It shouldn’t just tell the visitor there is an error. It should tell what the error means. Imagine an error light coming on in your car. Your first question would be “what does that mean?” Not providing useful information about the error is frustrating.</p>
+<p>Visitors need to know if they did something wrong or if the content doesn’t exist. If they don’t know, they’ll keep looking for the content until they furiously leave the website, vowing to never return. This is best done with a simple message and possibly an image that catches the eye. Something that stands out from your normal content that would appeal to your audience.</p>
+<p>Next, it needs to provide some direction of what to do next. This could be a list of articles, a search box, a list of categories, most popular posts, most recent posts, a way to contact you, etc.</p>
+<p>It’s that simple. 404 pages don’t need a lot of content. Just enough to be helpful.</p>
+<p>The example above includes:</p>
+<ul>
+<li>Background colors and patterns that would match the website/</li>
+<li>A title with a short message about the error.</li>
+<li>Large text showing that it’s a 404 page.</li>
+<li>A few buttons providing the visitor with some directions.</li>
+</ul>
+<p>It’s simple but stylish and helpful. That’s all you need.</p>
+<p>Let’s look at how to create a custom 404 page for WordPress using the content ideas we just discussed.</p>
+<h2>How to Create a Custom 404 Page in WordPress with the Divi Theme Builder</h2>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/How-to-Create-a-Custom-404-Page-in-WordPress-with-the-Divi-Theme-Builder.png" alt="404 Page Content" width="960" height="485" class="with-border aligncenter size-full wp-image-155488" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/How-to-Create-a-Custom-404-Page-in-WordPress-with-the-Divi-Theme-Builder.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/How-to-Create-a-Custom-404-Page-in-WordPress-with-the-Divi-Theme-Builder-300x152.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/How-to-Create-a-Custom-404-Page-in-WordPress-with-the-Divi-Theme-Builder-768x388.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/How-to-Create-a-Custom-404-Page-in-WordPress-with-the-Divi-Theme-Builder-610x308.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>The Divi Theme Builder makes it easy to create and assign a 404 page. Elegant Themes has several premade 404 pages that you can download for free. You can customize them any way you want. They’re a great way to get a head start on a 404 page design. If you prefer, you can build one from scratch.</p>
+<p>The example above is from the Fourth Theme Builder layout pack. There are lots of 404 pages available in the ET blog. To find them, search for “theme builder layout pack” or check them out here:</p>
+<ul>
+<li><a href="https://www.elegantthemes.com/blog/divi-resources/download-the-first-free-theme-builder-pack-for-divi"><strong>Download The First FREE Theme Builder Pack For Divi</strong></a></li>
+<li><a href="https://www.elegantthemes.com/blog/divi-resources/download-the-second-free-theme-builder-pack-for-divi"><strong>Download The Second FREE Theme Builder Pack For Divi</strong></a></li>
+<li><a href="https://www.elegantthemes.com/blog/divi-resources/download-the-third-free-theme-builder-pack-for-divi"><strong>Download The Third FREE Theme Builder Pack For Divi</strong></a></li>
+<li><a href="https://www.elegantthemes.com/blog/divi-resources/download-the-fourth-free-theme-builder-pack-for-divi"><strong>Download the Fourth FREE Theme Builder Pack for Divi</strong></a></li>
+<li><a href="https://www.elegantthemes.com/blog/divi-resources/download-the-fifth-free-theme-builder-pack-for-divi"><strong>Download the Fifth FREE Theme Builder Pack for Divi</strong></a></li>
+<li><a href="https://www.elegantthemes.com/blog/divi-resources/download-the-sixth-free-theme-builder-pack-for-divi"><strong>Download the Sixth FREE Theme Builder Pack for Divi</strong></a></li>
+</ul>
+<h3>Importing a Custom 404 Page into the Divi Theme Builder</h3>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder.png" alt="Importing a Custom 404 Page into the Divi Theme Builder" width="960" height="484" class="with-border aligncenter size-full wp-image-155493" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-300x151.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-768x387.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-610x308.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>You’ll find the Divi Theme Builder in the WordPress dashboard by going to <em>Divi</em> &gt; <em>Theme Builder</em>. This opens the page where you can create or import templates and assign them. In the upper right corner, you’ll see the import icon. Click this icon to import your 404 page template.</p>
+<p>Note – for tutorials on using the Divi Theme Builder, search for “theme builder” here in the Elegant Themes blog.</p>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-2.png" alt="Importing a Custom 404 Page into the Divi Theme Builder" width="961" height="622" class="with-border aligncenter size-full wp-image-155489" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-2.png 961w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-2-300x194.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-2-768x497.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-2-610x395.png 610w" sizes="(max-width: 961px) 100vw, 961px" /></p>
+<p>A modal opens where you can import your template. Select <em>Import</em> and navigate to your file under <em>Choose File</em>. The options to override the defaults and assignments are selected by default. I recommend leaving them selected. Click to import the template at the bottom of the modal. I’m importing the 404 page for the <a href="https://www.elegantthemes.com/blog/divi-resources/download-a-free-404-page-template-for-divis-crowdfunding-layout-pack">Crowdfunding Layout Pack</a>.</p>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-3.png" alt="Importing a Custom 404 Page into the Divi Theme Builder" width="960" height="278" class="with-border aligncenter size-full wp-image-155490" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-3.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-3-300x87.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-3-768x222.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-3-610x177.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>By importing a 404 page, it’s assigned automatically. Next, click on the edit icon to open the builder.</p>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-4.png" alt="Importing a Custom 404 Page into the Divi Theme Builder" width="960" height="485" class="with-border aligncenter size-full wp-image-155491" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-4.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-4-300x152.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-4-768x388.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-4-610x308.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>Now, make your edits within each module by adding your links, images, colors, text, etc. Save the layout and click the x in the upper right corner to close the builder.</p>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-6.png" alt="Importing a Custom 404 Page into the Divi Theme Builder" width="960" height="364" class="with-border aligncenter size-full wp-image-155492" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-6.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-6-300x114.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-6-768x291.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Importing-a-Custom-404-Page-into-the-Divi-Theme-Builder-6-610x231.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>Finally, save the changes to apply the template. You now have a custom 404 page.</p>
+<h3>Creating a Custom 404 Page with the Divi Theme Builder</h3>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder.png" alt="Importing a Custom 404 Page into the Divi Theme Builder" width="960" height="293" class="with-border aligncenter size-full wp-image-155478" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-300x92.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-768x234.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-610x186.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>In the Theme Builder, select to add a new template.</p>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-2.png" alt="" width="960" height="700" class="with-border aligncenter size-full wp-image-155473" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-2.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-2-300x219.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-2-768x560.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-2-610x445.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>This opens the template settings. Scroll to the bottom and select <em>404 Page</em> under <em>Other</em>. Next, click <em>Create Template</em>. The template settings will close.</p>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-3.png" alt="Creating a Custom 404 Page with the Divi Theme Builder" width="960" height="302" class="with-border aligncenter size-full wp-image-155474" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-3.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-3-300x94.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-3-768x242.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-3-610x192.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>Now, you can create the 404 page. Most don’t use a header or footer. Select <em>Add Custom Body</em>.</p>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-4.png" alt="Creating a Custom 404 Page with the Divi Theme Builder" width="960" height="421" class="with-border aligncenter size-full wp-image-155475" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-4.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-4-300x132.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-4-768x337.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-4-610x268.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>This shows two selections allowing you to build a custom body or add from the library. Select <em>Build Custom Body</em>.</p>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-5.png" alt="Creating a Custom 404 Page with the Divi Theme Builder" width="960" height="484" class="with-border aligncenter size-full wp-image-155476" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-5.png 960w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-5-300x151.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-5-768x387.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-5-610x308.png 610w" sizes="(max-width: 960px) 100vw, 960px" /></p>
+<p>Build the 404 page with the Divi Builder as normal. Save and exit.</p>
+<p><img loading="lazy" src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-6.png" alt="Creating a Custom 404 Page with the Divi Theme Builder" width="1114" height="618" class="with-border aligncenter size-full wp-image-155477" srcset="https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-6.png 1114w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-6-300x166.png 300w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-6-1024x568.png 1024w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-6-768x426.png 768w, https://www.elegantthemes.com/blog/wp-content/uploads/2021/06/Creating-a-Custom-404-Page-with-the-Divi-Theme-Builder-6-610x338.png 610w" sizes="(max-width: 1114px) 100vw, 1114px" /></p>
+<p>Finally, save your changes. You’re done.</p>
+<h2>Ending Thoughts on Creating a Custom 404 Page for WordPress</h2>
+<p>That’s our look at how to create a custom 404 page for WordPress. 404 pages need to be helpful. Unfortunately, the generic WordPress 404 page isn’t helpful, and it provides a poor user experience. Fortunately, you can create your own 404 page using the Divi Theme Builder.</p>
+<p>Using the information we’ve provided here, you’re well on your way to create a beautiful 404 page that provides users with a great experience and looks amazing while doing it.</p>
+<p><strong>We want to hear from you. Have you created a custom 404 page for your WordPress website? Let us know about our experience in the comments. </strong></p>
+<p><em>Featured Image via Letters-Shmetters / shutterstock.com</em></p>
+<span class="et_social_bottom_trigger"></span>
+</article>
+</div>
+</div>
+</div>
+</div>
+<div class="row-container">
+<div class="row">
+<div class="column-container">
+<div class="column card centered accent-blue">
+<div class="post-author-avatar">
+<img alt='' src='https://secure.gravatar.com/avatar/84af6bbff4d5acb207bb033a921a0504?s=48&#038;r=g' srcset='https://secure.gravatar.com/avatar/84af6bbff4d5acb207bb033a921a0504?s=96&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' /> </div>
+<div class="post-author-bio">
+<h5>By Randy A. Brown</h5>
+<p>
+Randy A. Brown is a freelance writer from east TN specializing in WordPress and eCommerce. He&#039;s a longtime WordPress enthusiast and loves learning new things and sharing information with others. If he&#039;s not writing or reading, he&#039;s probably playing guitar. </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="divi-cta" class="row-container card card-featured card-featured-fullwidth">
+<div class="row">
+<div class="column-container">
+<div class="column centered dark-background accent-pink">
+<img src="https://www.elegantthemes.com/images/divi/divi-logo-white.svg" alt="Divi Logo">
+<h2>Explore Divi, The Most Popular WordPress Theme In The World And The Ultimate Page Builder</h2>
+<a href="https://www.elegantthemes.com/gallery/divi/" class="button primary-button"><span>Learn About Divi</span></a>
+</div>
+</div>
+</div>
+</div>
+<div id="divi-cta-ui-collage" class="rellax" data-rellax-speed="1">
+<a href="https://www.elegantthemes.com/gallery/divi/"><img class="lazy" width="1820" height="657" src="https://www.elegantthemes.com/images/placeholder.jpg" data-src="https://www.elegantthemes.com/images/divi/divi-cta-ui-collage.png" alt="Premade Layouts" data-srcset="https://www.elegantthemes.com/images/divi/divi-cta-ui-collage-large.png 3640w, https://www.elegantthemes.com/images/divi/divi-cta-ui-collage.png 1820w, https://www.elegantthemes.com/images/divi/divi-cta-ui-collage-medium.png 768w, https://www.elegantthemes.com/images/divi/divi-cta-ui-collage-small.png 384w" sizes="(max-width: 1820px) 100vw, 1820px" alt="Divi Page Builder"></a>
+</div>
+<div class="row-container blog-index">
+<div class="row">
+<div class="column-container">
+<div class="column">
+<h3 id="comments">Check Out These Related Posts</h3>
+</div>
+</div>
+</div>
+<div class="row three-column small-gutters">
+<div class="column-container">
+<div class="column card accent-blue">
+<article id="post-160605" class="entry post-160605 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress tag-block-editor tag-gutenberg-blocks tag-mixcloud-embed tag-wordpress-blocks">
+<div class="post-thumbnail">
+<a href="https://www.elegantthemes.com/blog/wordpress/mixcloud-embed-block">
+<img src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/10/mixcloud-embed.png" alt="How to Use the WordPress Mixcloud Embed Block" />
+</a>
+</div>
+<h3><a href="https://www.elegantthemes.com/blog/wordpress/mixcloud-embed-block" title="Link to How to Use the WordPress Mixcloud Embed Block">How to Use the WordPress Mixcloud Embed Block</a></h3>
+<p class="blog-meta">Posted on <span class="published updated">October 12, 2021</span> by <a href="https://www.elegantthemes.com/blog/author/will-morris" title="Posts by Will Morris" rel="author">Will Morris</a> in <a href="https://www.elegantthemes.com/blog/category/wordpress" rel="category tag">WordPress</a></p>
+<p>There are many ways to make your website more engaging. One of them is to add music and playlists to your pages. Whether you&#8217;re looking to promote your own audio or someone else&#8217;s, the Mixcloud embed block can help you easily integrate your Mixcloud playlists and profile with your...</p>
+<a class="button tertiary-button fullwidth-button" href="https://www.elegantthemes.com/blog/wordpress/mixcloud-embed-block" class="viewfull">View Full Post</a>
+</article>
+</div>
+</div>
+<div class="column-container">
+<div class="column card accent-blue">
+<article id="post-160595" class="entry post-160595 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress tag-block-editor tag-gutenberg-blocks tag-issuu-embed tag-wordpress-tutorials-and-resources">
+<div class="post-thumbnail">
+<a href="https://www.elegantthemes.com/blog/wordpress/issuu-embed-block">
+<img src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/10/issuu-magazine-block.png" alt="How to Use the WordPress Issuu Embed Block" />
+</a>
+</div>
+<h3><a href="https://www.elegantthemes.com/blog/wordpress/issuu-embed-block" title="Link to How to Use the WordPress Issuu Embed Block">How to Use the WordPress Issuu Embed Block</a></h3>
+<p class="blog-meta">Posted on <span class="published updated">October 11, 2021</span> by <a href="https://www.elegantthemes.com/blog/author/will-morris" title="Posts by Will Morris" rel="author">Will Morris</a> in <a href="https://www.elegantthemes.com/blog/category/wordpress" rel="category tag">WordPress</a></p>
+<p>If you publish an online magazine, you probably offer readers a PDF version they can download. Alternatively, you may use a service such as Issuu, which enables users to read magazines online with an easy-to-use interface. With the Issuu embed block, you&#8217;ll be able to keep readers from...</p>
+<a class="button tertiary-button fullwidth-button" href="https://www.elegantthemes.com/blog/wordpress/issuu-embed-block" class="viewfull">View Full Post</a>
+</article>
+</div>
+</div>
+<div class="column-container">
+<div class="column card accent-blue">
+<article id="post-160591" class="entry post-160591 post type-post status-publish format-standard has-post-thumbnail hentry category-wordpress tag-block-editor tag-gutenberg-blocks tag-kickstarter-embed">
+<div class="post-thumbnail">
+<a href="https://www.elegantthemes.com/blog/wordpress/kickstarter-embed-block">
+<img src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/10/kickstarter-donation-block.png" alt="How to Use the WordPress Kickstarter Embed Block" />
+</a>
+</div>
+<h3><a href="https://www.elegantthemes.com/blog/wordpress/kickstarter-embed-block" title="Link to How to Use the WordPress Kickstarter Embed Block">How to Use the WordPress Kickstarter Embed Block</a></h3>
+<p class="blog-meta">Posted on <span class="published updated">October 10, 2021</span> by <a href="https://www.elegantthemes.com/blog/author/will-morris" title="Posts by Will Morris" rel="author">Will Morris</a> in <a href="https://www.elegantthemes.com/blog/category/wordpress" rel="category tag">WordPress</a></p>
+<p>You&#8217;ve probably heard about Kickstarter. It&#8217;s perhaps the best-known fundraising platform on the web. If you&#8217;re planning on launching a campaign, you need to publicize it. That means sharing it on social media, telling friends about it, and publishing the information on your...</p>
+<a class="button tertiary-button fullwidth-button" href="https://www.elegantthemes.com/blog/wordpress/kickstarter-embed-block" class="viewfull">View Full Post</a>
+</article>
+</div>
+</div>
+</div>
+</div>
+<div class="row-container accent-blue">
+<div class="row">
+<div class="column-container">
+<div class="column">
+<h3 id="comments">3 Comments</h3>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="column-container">
+<div class="column card accent-blue">
+<ol class="commentlist">
+<li class="comment even thread-even depth-1" id="li-comment-673857">
+<article id="comment-673857" class="comment-body">
+<div class="avatar-box">
+<img alt='' src='https://secure.gravatar.com/avatar/e10832d00c5d9d1726b6a3b869a32fc4?s=50&#038;r=g' srcset='https://secure.gravatar.com/avatar/e10832d00c5d9d1726b6a3b869a32fc4?s=100&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' loading='lazy' /> </div> 
+<div class="comment-meta commentmetadata">
+<span class="fn"><a href='https://www.annmsmusic.com/' rel='external nofollow ugc' class='url'>ANNMS MUSIC</a></span> <span class="comment_date">
+June 30, 2021 </span>
+</div>
+<div class="comment-content clearfix">
+<p>I don&#8217;t know squat about website design, you have no idea how grateful I am for your amazing products and blog articles. I was able to set up my business thanks to that.<br />
+#Respect</p>
+</div> 
+</article> 
+</li>
+</li>
+<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-673869">
+<article id="comment-673869" class="comment-body">
+<div class="avatar-box">
+<img alt='' src='https://secure.gravatar.com/avatar/f01a187624d3f81c22d5f9114d1f30ea?s=50&#038;r=g' srcset='https://secure.gravatar.com/avatar/f01a187624d3f81c22d5f9114d1f30ea?s=100&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' loading='lazy' /> </div> 
+<div class="comment-meta commentmetadata">
+<span class="fn"><a href='https://pro-strony.pl' rel='external nofollow ugc' class='url'>Phill</a></span> <span class="comment_date">
+June 30, 2021 </span>
+</div>
+<div class="comment-content clearfix">
+<p>A 404 page works best when there are well-crafted links. Preferably for a similar article or possibly for the home page.</p>
+</div> 
+</article> 
+</li>
+</li>
+<li class="comment even thread-even depth-1" id="li-comment-673962">
+<article id="comment-673962" class="comment-body">
+<div class="avatar-box">
+<img alt='' src='https://secure.gravatar.com/avatar/e217fdd99b536ffe829f4c49f19839ae?s=50&#038;r=g' srcset='https://secure.gravatar.com/avatar/e217fdd99b536ffe829f4c49f19839ae?s=100&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' loading='lazy' /> </div> 
+<div class="comment-meta commentmetadata">
+<span class="fn"><a href='https://www.jldesigns.net/' rel='external nofollow ugc' class='url'>Jorge</a></span> <span class="comment_date">
+July 1, 2021 </span>
+</div>
+<div class="comment-content clearfix">
+<p>I think it&#8217;s time to give my default 404 pages more thought! Thanks for the article!</p>
+</div> 
+</article> 
+</li>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row-container wide-width blog-index">
+<div class="row three-column small-gutters">
+<div class="column-container">
+<div class="column card accent-blue">
+<h4>Recent Posts</h4>
+<ul>
+<li>
+<a href="https://www.elegantthemes.com/blog/divi-resources/how-to-create-a-fullscreen-slider-with-divi">How to Create a Fullscreen Slider with Divi</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/blog/wordpress/mixcloud-embed-block">How to Use the WordPress Mixcloud Embed Block</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/blog/divi-resources/get-a-free-ngo-layout-pack-for-divi">Get a FREE NGO Layout Pack for Divi</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/blog/wordpress/issuu-embed-block">How to Use the WordPress Issuu Embed Block</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/blog/divi-resources/how-to-use-a-different-divi-header-on-the-homepage">How to Use a Different Divi Header on the Homepage</a>
+</li>
+</ul>
+</div>
+</div><div class="column-container">
+<div class="column card accent-blue"><h4>Categories</h4>
+<ul>
+<li class="cat-item cat-item-20944"><a href="https://www.elegantthemes.com/blog/category/business">Business</a>
+</li>
+<li class="cat-item cat-item-526"><a href="https://www.elegantthemes.com/blog/category/community">Community</a>
+</li>
+<li class="cat-item cat-item-10"><a href="https://www.elegantthemes.com/blog/category/customer-spotlight">Customer Spotlight</a>
+</li>
+<li class="cat-item cat-item-26099"><a href="https://www.elegantthemes.com/blog/category/design">Design</a>
+</li>
+<li class="cat-item cat-item-848"><a href="https://www.elegantthemes.com/blog/category/divi-resources">Divi Resources</a>
+</li>
+<li class="cat-item cat-item-13"><a href="https://www.elegantthemes.com/blog/category/editorial">Editorial</a>
+</li>
+<li class="cat-item cat-item-12"><a href="https://www.elegantthemes.com/blog/category/freebie-of-the-week">Freebie Of The Week</a>
+</li>
+<li class="cat-item cat-item-3"><a href="https://www.elegantthemes.com/blog/category/general-news">General News</a>
+</li>
+<li class="cat-item cat-item-20822"><a href="https://www.elegantthemes.com/blog/category/marketing">Marketing</a>
+</li>
+<li class="cat-item cat-item-8"><a href="https://www.elegantthemes.com/blog/category/resources">Resources</a>
+</li>
+<li class="cat-item cat-item-4"><a href="https://www.elegantthemes.com/blog/category/theme-additions">Theme Additions</a>
+</li>
+<li class="cat-item cat-item-5"><a href="https://www.elegantthemes.com/blog/category/theme-changesbug-fixes">Theme Changes/Bug Fixes</a>
+</li>
+<li class="cat-item cat-item-9"><a href="https://www.elegantthemes.com/blog/category/theme-releases">Theme Releases</a>
+</li>
+<li class="cat-item cat-item-6"><a href="https://www.elegantthemes.com/blog/category/theme-sneak-peeks">Theme Sneak Peeks</a>
+</li>
+<li class="cat-item cat-item-14"><a href="https://www.elegantthemes.com/blog/category/tips-tricks">Tips &amp; Tricks</a>
+</li>
+<li class="cat-item cat-item-20874"><a href="https://www.elegantthemes.com/blog/category/wordpress">WordPress</a>
+</li>
+</ul>
+</div>
+</div><div class="column-container">
+<div class="column card accent-blue"><h4>Follow Us</h4> <div class="textwidget"><div class="et_social_networks et_social_3col et_social_slide et_social_rounded et_social_top et_social_mobile_on et_social_withnetworknames et_social_outer_light">
+<ul class="et_social_icons_container"><li class="et_social_facebook">
+<a href="https://www.facebook.com/elegantthemes" class="et_social_follow" data-social_name="facebook" data-social_type="follow" data-post_id="155361" target="_blank" rel="noopener">
+<i class="et_social_icon et_social_icon_facebook"></i>
+<div class="et_social_network_label"><div class="et_social_networkname">Facebook</div></div>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_twitter">
+<a href="https://twitter.com/elegantthemes/" class="et_social_follow" data-social_name="twitter" data-social_type="follow" data-post_id="155361" target="_blank" rel="noopener">
+<i class="et_social_icon et_social_icon_twitter"></i>
+<div class="et_social_network_label"><div class="et_social_networkname">Twitter</div></div>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_linkedin">
+<a href="https://www.linkedin.com/company/elegantthemes" class="et_social_follow" data-social_name="linkedin" data-social_type="follow" data-post_id="155361" target="_blank" rel="noopener">
+<i class="et_social_icon et_social_icon_linkedin"></i>
+<div class="et_social_network_label"><div class="et_social_networkname">LinkedIn</div></div>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_dribbble">
+<a href="https://dribbble.com/elegantthemes" class="et_social_follow" data-social_name="dribbble" data-social_type="follow" data-post_id="155361" target="_blank" rel="noopener">
+<i class="et_social_icon et_social_icon_dribbble"></i>
+<div class="et_social_network_label"><div class="et_social_networkname">Dribbble</div></div>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_rss">
+<a href="https://www.elegantthemes.com/newsletter/" class="et_social_follow" data-social_name="rss" data-social_type="follow" data-post_id="155361" target="_blank" rel="noopener">
+<i class="et_social_icon et_social_icon_rss"></i>
+<div class="et_social_network_label"><div class="et_social_networkname">RSS</div></div>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_youtube">
+<a href="https://www.youtube.com/c/elegantthemes?sub_confirmation=1" class="et_social_follow" data-social_name="youtube" data-social_type="follow" data-post_id="155361" target="_blank" rel="noopener">
+<i class="et_social_icon et_social_icon_youtube"></i>
+<div class="et_social_network_label"><div class="et_social_networkname">YouTube</div></div>
+<span class="et_social_overlay"></span>
+</a>
+</li></ul>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="bottom-call-to-action" class="et-highlightable">
+<div class="row-container card card-featured background-none">
+<svg viewBox="0 0 300 322">
+<title>Colorful Shapes</title>
+<defs>
+<linearGradient id="gradient" gradientTransform="rotate(45)">
+<stop offset="5%" stop-color="rgba(233,244,255,1)" />
+<stop offset="95%" stop-color="rgba(233,244,255,0)" />
+</linearGradient>
+</defs>
+<path fill="url(#gradient)" d="M300,211.09V110.76c0-21.47-11.55-41.27-30.23-51.85L179.35,7.73c-18.21-10.31-40.48-10.31-58.69,0L30.23,58.91 C11.55,69.48,0,89.29,0,110.76v100.33c0,21.47,11.55,41.27,30.23,51.85l90.42,51.18c18.21,10.31,40.48,10.31,58.69,0l90.42-51.18 C288.45,252.36,300,232.55,300,211.09z" />
+</svg>
+<div class="row ">
+<div class="column-container">
+<div class="column centered dark-background accent-pink">
+<h2>806,875 Customers Are Already Building Amazing Websites With Divi. Join The Most Empowered WordPress Community On The Web</h2>
+<a href="https://www.elegantthemes.com/join/" class="button primary-button">Sign Up Today</a>
+</div>
+</div>
+</div>
+<div class="row ">
+<div class="column-container">
+<div class="column centered dark-background accent-green">
+<p class="lead">We offer a 30 Day Money Back Guarantee, so joining is <span class="guarantee">Risk-Free!</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<span class="et-highlighted-overlay"></span>
+<section id="main-footer">
+<div class="row-container narrow">
+<div id="social-accounts" class="row small-gutters three-column-tablet two-column-phone">
+<div class="column-container">
+<a id="facebook" rel="noreferrer" href="https://www.facebook.com/elegantthemes/" class="column card card-small elevation-1 centered accent-blue" target="_blank">
+<svg viewbox="0 0 28 28" class="icon-small">
+<title>Facebook</title>
+<path d="M17.35,14H15l0,9l-3,0v-9l-2,0v-3h2V9.07C12,5,15.69,5,15.69,5L18,5l0,3l-1.93,0C15.45,8,15,8.42,15,9.2l0,1.8
+							l2.67,0L17.35,14z" />
+</svg>
+<span>151k</span>
+Followers
+</a>
+</div>
+<div class="column-container">
+<a id="facebook-group" rel="noreferrer" href="https://www.facebook.com/groups/DiviThemeUsers/" class="column card card-small elevation-1 centered accent-light-blue" target="_blank">
+<svg viewbox="0 0 28 28" class="icon-small">
+<title>Facebook Group</title>
+<path class="transparent" d="M10,18.21c0,2.38-6,2.38-6,0C4,14.74,5.42,13,7,13C8.58,13,10,14.74,10,18.21z M7,8c-1.1,0-2,0.9-2,2s0.9,2,2,2 s2-0.9,2-2S8.1,8,7,8z" />
+<path class="transparent" d="M24,18.21c0,2.38-6,2.38-6,0c0-3.48,1.42-5.21,3-5.21C22.58,13,24,14.74,24,18.21z M21,8c-1.1,0-2,0.9-2,2 s0.9,2,2,2s2-0.9,2-2S22.1,8,21,8z" />
+<path d="M19,20c0,4-10,4-10,0c0-4.74,2.26-7,5-7S19,15.26,19,20z M17,9c0,1.66-1.34,3-3,3s-3-1.34-3-3s1.34-3,3-3 S17,7.34,17,9z" />
+</svg>
+<span>68k</span>
+Members
+</a>
+</div>
+<div class="column-container">
+<a id="twitter" rel="noreferrer" href="https://twitter.com/elegantthemes/" class="column card card-small elevation-1 centered accent-teal" target="_blank">
+<svg viewbox="0 0 28 28" class="icon-small">
+<title>Twitter</title>
+<path d="M22.34,9.04c-0.61,0.26-1.27,0.44-1.96,0.52c0.71-0.41,1.25-1.05,1.5-1.82c-0.66,0.38-1.39,0.65-2.17,0.8 c-0.62-0.64-1.51-1.04-2.5-1.04c-1.89,0-3.42,1.47-3.42,3.28c0,0.26,0.03,0.51,0.09,0.75c-2.84-0.14-5.36-1.45-7.05-3.43 C6.53,8.58,6.37,9.15,6.37,9.75c0,1.14,0.6,2.14,1.52,2.73c-0.56-0.02-1.09-0.17-1.55-0.41c0,0.01,0,0.03,0,0.04 c0,1.59,1.18,2.92,2.74,3.22c-0.29,0.07-0.59,0.11-0.9,0.11c-0.22,0-0.43-0.02-0.64-0.06c0.44,1.3,1.7,2.25,3.19,2.28 c-1.17,0.88-2.65,1.4-4.25,1.4c-0.28,0-0.55-0.02-0.82-0.05c1.51,0.93,3.31,1.48,5.24,1.48c6.29,0,9.73-5,9.73-9.34 c0-0.14,0-0.28-0.01-0.43C21.3,10.28,21.88,9.7,22.34,9.04z" />
+</svg>
+<span>61k</span>
+Followers
+</a>
+</div>
+<div class="column-container">
+<a id="email" href="https://www.elegantthemes.com/newsletter/" class="column card card-small elevation-1 centered accent-gray">
+<svg viewbox="0 0 28 28" class="icon-small">
+<title>Newsletter</title>
+<path d="M14,15.51l8-3.2L22,19c0,0.55-0.45,1-1,1L7,20c-0.55,0-1-0.45-1-1l0-6.69L14,15.51z M22,10.68l-8,3.2l-8-3.2 L6,9c0-0.55,0.45-1,1-1l14,0c0.55,0,1,0.45,1,1L22,10.68z" />
+</svg>
+<span>305k</span>
+Subscribers
+</a>
+</div>
+<div class="column-container">
+<a id="youtube" rel="noreferrer" href="https://www.youtube.com/c/elegantthemes?sub_confirmation=1" class="column card card-small elevation-1 centered accent-red" target="_blank">
+<svg viewbox="0 0 28 28" class="icon-small">
+<title>Youtube</title>
+<path d="M12,11l6,2.96L12,17L12,11z M21.29,7.26C16.74,6.96,11,7,6.71,7.26c-1.45,0.09-2.43,1.88-2.53,3.2 c-0.23,2.75-0.23,4.32,0,7.07c0.11,1.31,1.07,3.05,2.53,3.23c4.69,0.3,10.3,0.24,14.59,0c1.44-0.08,2.43-1.92,2.54-3.23 c0.23-2.75,0.23-4.49,0-7.25C23.72,8.97,22.93,7.32,21.29,7.26z" />
+</svg>
+<span>155k</span>
+Subscribers
+</a>
+</div>
+<div class="column-container">
+<a id="dribbble" rel="noreferrer" href="https://dribbble.com/elegantthemes" class="column card card-small elevation-1 centered accent-pink" target="_blank">
+<svg viewbox="0 0 28 28" class="icon-small">
+<title>Dribbble</title>
+<path d="M19.29,9.69c-0.14,0.19-1.29,1.66-3.82,2.69c0.16,0.33,0.31,0.66,0.45,0.99c0.05,0.12,0.1,0.24,0.15,0.35 c2.27-0.29,4.53,0.17,4.76,0.22C20.82,12.33,20.24,10.85,19.29,9.69z M12.4,7.37c0.19,0.25,1.43,1.94,2.55,4 c2.43-0.91,3.46-2.29,3.58-2.47C17.32,7.83,15.74,7.18,14,7.18C13.45,7.18,12.91,7.24,12.4,7.37z M7.31,12.61 c0.31,0,3.12,0.02,6.32-0.83c-1.13-2.01-2.35-3.71-2.53-3.95C9.18,8.73,7.75,10.49,7.31,12.61z M8.92,18.58 c0.16-0.26,2.03-3.37,5.55-4.51c0.09-0.03,0.18-0.06,0.27-0.08c-0.17-0.39-0.36-0.78-0.55-1.16c-3.41,1.02-6.72,0.98-7.02,0.97 c0,0.07,0,0.14,0,0.21C7.17,15.76,7.83,17.37,8.92,18.58z M16.67,20.3c-0.1-0.6-0.5-2.69-1.46-5.18c-0.02,0-0.03,0.01-0.05,0.01 c-3.85,1.34-5.24,4.01-5.36,4.27c1.16,0.9,2.61,1.44,4.19,1.44C14.95,20.84,15.85,20.65,16.67,20.3z M20.75,15.1 c-0.23-0.07-2.11-0.64-4.26-0.29c0.89,2.46,1.26,4.46,1.33,4.87C19.35,18.64,20.44,17,20.75,15.1z M14,22c-4.41,0-8-3.59-8-8 c0-4.41,3.59-8,8-8c4.41,0,8,3.59,8,8C22,18.41,18.41,22,14,22z">
+</svg>
+<span>6k</span>
+Followers
+</a>
+</div>
+</div>
+<div id="footer-menu" class="row three-column-tablet two-column-phone">
+<div class="column-container">
+<div class="column">
+<a href="https://www.elegantthemes.com/gallery/divi/"><h3>Divi</h3></a>
+<ul class="link-list">
+<li>
+<a href="https://www.elegantthemes.com/gallery/divi/">Features</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/layouts/">Layout Library</a>
+</li>
+<li>
+<a href="https://www.elegantthemesdemo.com/?et_fb=1" target="_blank">Live Demo</a>
+<li>
+<a href="https://www.elegantthemes.com/marketplace/">Divi Marketplace</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/hosting/">Divi Hosting</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/divi-reviews/">Divi Reviews</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="column-container">
+<div class="column">
+<a href="https://www.elegantthemes.com/products/"><h3>Products</h3></a>
+<ul class="link-list">
+<li>
+<a href="https://www.elegantthemes.com/gallery/divi/">Divi Theme</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/gallery/extra/">Extra Theme</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/plugins/bloom/">Bloom Plugin</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/plugins/monarch/">Monarch Plugin</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/gallery/">WordPress Themes</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/plugins/">WordPress Plugins</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="column-container">
+<div class="column">
+<a href="https://www.elegantthemes.com/members-area/help/"><h3>Resources</h3></a>
+<ul class="link-list">
+<li>
+<a href="https://www.elegantthemes.com/documentation/">Documentation</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/members-area/help/">24/7 Support</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/forum/">Community</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/documentation/developers/">Developer Docs</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/affiliates/">Affiliates</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="column-container">
+<div class="column">
+<a href="https://www.elegantthemes.com/blog/"><h3>Blog</h3></a>
+<ul class="link-list">
+<li>
+<a href="https://www.elegantthemes.com/blog/">Recent Posts</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/blog/category/theme-releases/">Product Updates</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/blog/category/divi-resources/">Divi Resources</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/blog/category/business/">Business</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/blog/category/wordpress/">WordPress</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="column-container">
+<div class="column">
+<a href="https://www.elegantthemes.com/about/"><h3>Company</h3></a>
+<ul class="link-list">
+<li>
+<a href="https://www.elegantthemes.com/about/">About Us</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/careers/">Careers</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/contact/">Contact Us</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/policy/service/">Terms of Service</a>
+</li>
+<li>
+<a href="https://www.elegantthemes.com/policy/privacy/">Privacy Policy</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="footer-trust-icons" class="row">
+<div class="column-container">
+<div class="column">
+<a rel="nofollow noreferrer" target="_blank" href="https://www.trustedsite.com/verify?js=1&host=elegantthemes.com"><img class="lazy" width="94" height="40" title="TrustedSite Certified" alt="TrustedSite" src="https://www.elegantthemes.com/images/placeholder.jpg" data-src="https://www.elegantthemes.com/images/logos/trustedsite.svg"></a>
+</div>
+</div>
+<div class="column-container">
+<div class="column">
+<a rel="nofollow noreferrer" target="_blank" href="https://safeweb.norton.com/report/show?url=www.elegantthemes.com"><img class="lazy" width="74" height="40" title="Norton Secured" alt="Norton" src="https://www.elegantthemes.com/images/placeholder.jpg" data-src="https://www.elegantthemes.com/images/logos/norton.svg"></a>
+</div>
+</div>
+<div class="column-container">
+<div class="column">
+<a rel="nofollow noreferrer" target="_blank" href="https://www.bbb.org/greater-san-francisco/business-reviews/web-design/elegant-themes-in-san-francisco-ca-376238"><img class="lazy" alt="BBB" title="Better Business Bureau" width="94" height="40" src="https://www.elegantthemes.com/images/placeholder.jpg" data-src="https://www.elegantthemes.com/images/logos/bbb.svg"></a>
+</div>
+</div>
+<div class="column-container">
+<div class="column">
+<a rel="nofollow noreferrer" target="_blank" href="https://www.trustpilot.com/review/www.elegantthemes.com"><img class="lazy" width="94" height="40" title="Trustpilot Reviews" alt="Trust Pilot" src="https://www.elegantthemes.com/images/placeholder.jpg" data-src="https://www.elegantthemes.com/images/logos/trustpilot.svg"></a>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="column-container">
+<div class="column centered">
+<p>Copyright &copy; 2021 Elegant Themes &reg;</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<a href="https://www.elegantthemes.com/join/" class="button primary-button accent-green video-popup-join-button">Join To Download Today</a> <script type="text/javascript" src="https://www.elegantthemes.com/js/cookie.js?ver=5.63"></script><script type="text/javascript" src="https://www.elegantthemes.com/js/cookie-consent.js?ver=5.63"></script><script type="text/javascript" src="https://www.elegantthemes.com/js/intersectional-observer.js?ver=5.63"></script><script type="text/javascript" src="https://www.elegantthemes.com/js/yall.js?ver=5.63"></script><script type="text/javascript" src="https://www.elegantthemes.com/js/magnificpopup.js?ver=5.63"></script><script type="text/javascript" src="https://www.elegantthemes.com/js/relax.js?ver=5.63"></script><script type="text/javascript" src="https://www.elegantthemes.com/js/jquery.plugin.min.js?ver=5.63"></script><script type="text/javascript" src="https://www.elegantthemes.com/js/jquery.countdown.min.js?ver=5.63"></script><script type="text/javascript" src="https://www.elegantthemes.com/js/allpages.js?ver=5.63"></script><script type="text/javascript" src="https://www.elegantthemes.com/js/promo.js?ver=5.63"></script>
+<script>
+					function et_third_party_scripts() {
+						// Facebook
+						!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+						n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+						n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+						t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+						document,'script','https://connect.facebook.net/en_US/fbevents.js');
+						fbq('init', '967149496645973');
+						fbq('track', "PageView");
+
+						// Google
+						var et_first_script = document.getElementsByTagName( 'script' )[ 0 ];
+						var et_new_script = document.createElement( 'script' );
+						et_new_script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-1006729916';
+						et_new_script.setAttribute('async', 'true');
+						et_first_script.parentNode.insertBefore( et_new_script, et_first_script );
+						window.onload = function(){
+							window.dataLayer = window.dataLayer || [];
+							function gtag(){dataLayer.push(arguments);}
+							gtag('js', new Date());
+
+							gtag('config', 'AW-1006729916');
+						};
+
+						// Twitter
+						!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+						},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+						a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+						twq('init','o0xq6');
+						twq('track','PageView');
+
+									}
+				</script>
+
+<script>
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				ga('create', 'UA-5205247-2', {'storeGac': false});
+				ga('set', 'anonymizeIp', true);
+				ga('send', 'pageview');
+			</script>
+
+<div class="et_social_pin_images_outer">
+<div class="et_social_pinterest_window">
+<div class="et_social_modal_header"><h3>Pin It on Pinterest</h3><span class="et_social_close"></span></div>
+<div class="et_social_pin_images" data-permalink="https://www.elegantthemes.com/blog/wordpress/custom-wordpress-404-error-page" data-title="How to Create a Custom WordPress 404 Error Page" data-post_id="155361"></div>
+</div>
+</div><div class="et_social_sidebar_networks et_social_visible_sidebar et_social_slideright et_social_animated et_social_rounded et_social_sidebar_flip et_social_mobile_off">
+<ul class="et_social_icons_container"><li class="et_social_facebook">
+<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.elegantthemes.com%2Fblog%2Fwordpress%2Fcustom-wordpress-404-error-page&#038;t=How%20to%20Create%20a%20Custom%20WordPress%20404%20Error%20Page" class="et_social_share" rel="nofollow" data-social_name="facebook" data-post_id="155361" data-social_type="share" data-location="sidebar">
+<i class="et_social_icon et_social_icon_facebook"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_twitter">
+<a href="https://twitter.com/share?text=How%20to%20Create%20a%20Custom%20WordPress%20404%20Error%20Page&#038;url=https%3A%2F%2Fwww.elegantthemes.com%2Fblog%2Fwordpress%2Fcustom-wordpress-404-error-page&#038;via=elegantthemes" class="et_social_share" rel="nofollow" data-social_name="twitter" data-post_id="155361" data-social_type="share" data-location="sidebar">
+<i class="et_social_icon et_social_icon_twitter"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_linkedin">
+<a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https%3A%2F%2Fwww.elegantthemes.com%2Fblog%2Fwordpress%2Fcustom-wordpress-404-error-page&#038;title=How%20to%20Create%20a%20Custom%20WordPress%20404%20Error%20Page" class="et_social_share" rel="nofollow" data-social_name="linkedin" data-post_id="155361" data-social_type="share" data-location="sidebar">
+<i class="et_social_icon et_social_icon_linkedin"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_pinterest">
+<a href="#" class="et_social_share_pinterest" rel="nofollow" data-social_name="pinterest" data-post_id="155361" data-social_type="share" data-location="sidebar">
+<i class="et_social_icon et_social_icon_pinterest"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li><li class="et_social_all_button">
+<a href="#" rel="nofollow" data-location="sidebar" data-page_id="155361" data-permalink="https://www.elegantthemes.com/blog/wordpress/custom-wordpress-404-error-page" data-title="How to Create a Custom WordPress 404 Error Page" class="et_social_open_all">
+<i class="et_social_icon et_social_icon_all_button"></i>
+<span class="et_social_overlay"></span>
+</a>
+</li></ul>
+<span class="et_social_hide_sidebar et_social_icon"></span>
+</div><script type='text/javascript' src='https://www.elegantthemes.com/blog/wp-content/plugins/monarch/js/idle-timer.min.js?ver=1.4.14' id='et_monarch-idle-js'></script>
+<script type='text/javascript' id='et_monarch-custom-js-js-extra'>
+/* <![CDATA[ */
+var monarchSettings = {"ajaxurl":"https:\/\/www.elegantthemes.com\/blog\/wp-admin\/admin-ajax.php","pageurl":"https:\/\/www.elegantthemes.com\/blog\/wordpress\/custom-wordpress-404-error-page","stats_nonce":"21d2a219ff","share_counts":"86b1ac7e39","follow_counts":"0e2b5185dc","total_counts":"b31988f39d","media_single":"cec61056cf","media_total":"ef969d45f0","generate_all_window_nonce":"7f6a382175","no_img_message":"No images available for sharing on this page"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.elegantthemes.com/blog/wp-content/plugins/monarch/js/custom.js?ver=1.4.14' id='et_monarch-custom-js-js'></script>
+<script type='text/javascript' src='https://www.elegantthemes.com/blog/wp-includes/js/comment-reply.min.js?ver=b93ed666aef280bbb30ff541b09b2e5c' id='comment-reply-js'></script>
+<script type='text/javascript' src='https://www.elegantthemes.com/blog/wp-content/plugins/bloom/core/admin/js/common.js?ver=4.9.3' id='et-core-common-js'></script>
+<script type='text/javascript' src='https://www.elegantthemes.com/blog/wp-includes/js/wp-embed.min.js?ver=b93ed666aef280bbb30ff541b09b2e5c' id='wp-embed-js'></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"69d3c9877afa5fa1","token":"a595f655f9be4d8cba21c8023304252d","version":"2021.9.0","si":100}'></script>
+</body>
+</html>

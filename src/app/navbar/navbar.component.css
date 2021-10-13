@@ -1,0 +1,16 @@
+.nav-link
+{
+  font-weight: 800 !important;
+  color: white !important;
+}
+.active{
+  color: darkred !important;
+}
+.navbar-brand{
+  color: darkred !important;
+  font-weight: 900 !important;
+
+}
+.navbar{
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}

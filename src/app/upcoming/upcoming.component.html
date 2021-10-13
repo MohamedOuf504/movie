@@ -1,0 +1,15 @@
+<section class="movie">
+  <div class="container pt-5 ">
+    <div class="row">
+      <div class="col-md-3" *ngFor ="let movie of upcominglist ; let i =index">
+        <div class="p-3 shadow-lg">
+          <img  [routerLink]="['/show',movie.id]" fragment= "Upcoming" [src]= "imgpath+movie.poster_path"  class="img-fluid" alt="">
+        <h5 class=" my-3 ">{{movie.title}}</h5>
+        <h1>
+          <!-- url:{{activedRouter.url|async}} -->
+        </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

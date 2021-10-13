@@ -1,0 +1,50 @@
+<section class="movie">
+    <div class="container pt-5 ">
+        <div class="back">
+            <h1 (click)="back()" class="pt-4">
+
+                <i class=" text-danger   fas  fa-arrow-circle-left"></i>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="p-3 details shadow-lg">
+                    <img [src]="imgpath+dataOfResponse.backdrop_path" class="w-100" alt="">
+                        <p class="pt-2">
+                        <span> Name :</span>
+                            {{dataOfResponse.original_title}}</p>
+                        <p class="pt-2">
+                            <span>Rate :
+                            </span>
+                            {{dataOfResponse.vote_average}}</p>
+                        <p class="pt-2">
+                            <span>
+                                Country :</span>
+                            {{dataOfResponse.original_language}}</p>
+                        <p class="pt-2">
+                            <span>
+                                Category :
+                            </span>
+                            {{dataOfResponse.genres[0].name  }}</p>
+                        <p class="pt-2">
+                            <span>
+                                Publish :</span>
+                            {{dataOfResponse.release_date}}</p>
+                        <p class="pt-2">
+                            <span>Languages :</span>
+                            {{dataOfResponse.spoken_languages[0].english_name}}</p>
+                        <p class="pt-2">
+                            <span>
+                                Production Countries</span>
+                            :
+                            {{dataOfResponse.production_countries[0].name}}</p>
+                        <p class="pt-2">
+                            <span>
+                                Story :
+                            </span>
+                            {{dataOfResponse.overview}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

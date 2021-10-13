@@ -1,0 +1,7 @@
+.login{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../assets/image//EG-en-20211004-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-position: center center;
+    background-size: cover ;
+    height: 100vh;
+
+  }

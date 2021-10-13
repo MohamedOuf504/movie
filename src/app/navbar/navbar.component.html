@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-dark  fixed-top  ">
+  <div class="container-fluid ">
+    <a class="navbar-brand" routerLink='Home'>Movie</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 ms-auto mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " *ngIf="islogin" routerLinkActive="active"  routerLink='Home'>Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " *ngIf="islogin" routerLinkActive="active"   routerLink='Nowplaying'>Now playing</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link"  *ngIf="islogin" routerLinkActive="active" routerLink='TopRated'>Top Rated</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="islogin" routerLinkActive="active" routerLink='Trending'>Trending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"   *ngIf="islogin" routerLinkActive="active" routerLink='Upcoming'>Upcoming</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"   *ngIf="islogin" routerLinkActive="active" routerLink='TV'>TV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"   *ngIf="islogin" routerLinkActive="active" routerLink='People'>People</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="!islogin" routerLinkActive="active" routerLink='register'>REGISTER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="!islogin"  routerLinkActive="active" routerLink='login'>LOGIN</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" (click)="logOut()"  *ngIf="islogin"  routerLinkActive="active" routerLink='logout'>LOGOUT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,15 @@
+<section class="movie ">
+  <div class="container pt-5 ">
+
+    <div class="row">
+      <div class="col-md-3" *ngFor ="let movie of Topratedlist">
+        <div class="p-3 shadow-lg">
+          <img [src]= "imgpath+movie.poster_path" [routerLink]="['/show' , movie.id]"  fragment="TopRated" class="img-fluid" alt="">
+        <h4  class=" my-3 ">{{movie.title}}</h4>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
