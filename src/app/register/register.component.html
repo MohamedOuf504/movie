@@ -87,8 +87,8 @@
                                             password is required
                                         </p>
                                         <p *ngIf="registerForm.get('password')?.errors?.pattern ">
-                                            password is invalid
-                                        </p>
+                                          password must contain at min 1 characters
+                                          password min 6 max 10                                  </p>
 
                                     </div>
 
